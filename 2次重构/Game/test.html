@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+
+    #setting-page {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: flex;
+
+    }
+
+    #left-bar{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #right-content{
+      display: flex;
+      flex-direction: column;
+
+      /* padding-left: 100px; */
+
+      background-color: rgb(194, 206, 112);
+
+    }
+    #right-content .setting-contents{
+      padding: 10px 50px;
+    }
+
+    .setting-title{
+      font-size: 20px;
+      background-color: rgb(149, 130, 106);
+      padding: 10px 50px;
+    }
+
+    .setting-title:hover{
+      background-color: rgb(108, 84, 55);
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="setting-page">
+
+    <div id="left-bar">
+
+      <div>
+        <div class="setting-title">音乐设置</div>
+      </div>
+
+      <div>
+        <div class="setting-title">字体设置</div>
+      </div>
+
+    </div>
+
+    <div id="right-content">
+
+      <div class="setting-contents" id="music-setting">
+        <div>音量大小</div>
+      </div>
+
+      <div class="setting-contents" id="font-setting" style="display: none;">
+        <div>字体缩小</div>
+        <div>字体增大</div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  var settingTitles= document.getElementsByClassName("setting-title");
+  var settingContents= document.getElementsByClassName("setting-contents");
+
+  for(let i=0;i<settingTitles.length;i++){
+    settingTitles[i].onclick=function(){
+      for(let i=0;i<settingContents.length;i++){
+        settingContents[i].style.display="none";
+      }
+      settingContents[i].style.display="block";
+    }
+  }
+
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+
+#characterBar{
+  animation-fill-mode:forwards;
+  background-attachment: fixed;
+}
+
+#settingBar{
+  animation-fill-mode:forwards;
+  background-attachment: fixed;
+}
+
+#content{
+  animation-fill-mode:forwards;
+  background-attachment: fixed;
+}
+
+.whitePoint::before{
+  content: " ";
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(50%,50%); */
+  box-shadow: 0px 0px 200px 50px white;
+  border-radius: 50%;
+  animation: showWhitePoint 10s ;
+}
+
+
+
+
+@keyframes changeToDark{
+	to{
+    background-color: black;
+    color: white;
+	}
+}
+
+@keyframes showWhitePoint{
+  from{
+    opacity: 0;
+  }
+	to{
+    opacity: 1;
+	}
+}
+
+@keyframes inTheForest{
+	to{
+    background-color: rgba(9, 71, 6,.5);
+    color: rgba(214, 233, 145);
+	}
+}
+
+
+
+

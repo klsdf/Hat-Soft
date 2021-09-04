@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>色彩中性混合</title>
+    <style>
+        #content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #drawArea {
+            background-color: pink;
+        }
+
+        .options {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .options:hover {
+            color: red;
+        }
+
+        #achievement {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            animation: show 2s;
+        }
+
+        @keyframes show {
+            0% {
+                top: -100px;
+            }
+
+            50% {
+                top: 50px;
+            }
+
+            70% {
+                top: 50px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a id="backTo" href="./index.html">返回首页</a>
+    <div id="content">
+        <div id="console">
+            <button class="options" id="speedUp">速度增加</button>
+            <button class="options" id="speedDown">速度减少</button>
+
+            <span class="options">颜色1</span>
+            <select id="color1">
+                <option style="color: red;" value="red" selected>红色</option>
+                <option style="color: green;" value="green">绿色</option>
+                <option style="color: blue;" value="blue">蓝色</option>
+                <option style="color: cyan;" value="cyan">青</option>
+                <option style="color: magenta;" value="magenta">品红</option>
+                <option style="color: yellow;" value="yellow">黄</option>
+            </select>
+
+            <span class="options">颜色2</span>
+            <select id="color2">
+                <option style="color: red;" value="red">红色</option>
+                <option style="color: green;" value="green" selected>绿色</option>
+                <option style="color: blue;" value="blue">蓝色</option>
+                <option style="color: cyan;" value="cyan">青</option>
+                <option style="color: magenta;" value="magenta">品红</option>
+                <option style="color: yellow;" value="yellow">黄</option>
+            </select>
+
+
+        </div>
+        <canvas id="drawArea" width="500px" height="500px"> </canvas>
+    </div>
+
+</body>
+
+<script>
+    var canvas = document.getElementById("drawArea");
+    var ctx = canvas.getContext('2d'); //获取上下文环境（画笔）
+
+    var speed = 1;
+    var color_1 = "red";
+    var color_2 = "green";
+    function DrawCircle() {
+
+        var i = 0;
+
+        setInterval(() => {
+            i = (i + speed) % 360;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+
+            ctx.translate(250, 250);
+            ctx.rotate(i * Math.PI / 180);
+
+
+
+            ctx.beginPath();
+            ctx.arc(0, 0, 100, 0, Math.PI, false);
+            ctx.fillStyle = color_1;
+            ctx.fill();
+            ctx.closePath();
+
+
+            ctx.beginPath();
+            ctx.arc(0, 0, 100, 0, Math.PI, true);
+            ctx.fillStyle = color_2;
+            ctx.fill();
+            ctx.closePath();
+
+
+
+            ctx.restore();
+
+        }, 1)
+
+
+
+    }
+    DrawCircle();
+
+    function showAchievement(text) {
+        var temp= document.getElementById("achievement");
+        if(temp){
+            temp.parentNode.removeChild(temp);
+        }
+       
+
+        var para = document.createElement("p");
+        var node = document.createTextNode("获得成就："+text);
+        para.appendChild(node);
+        para.id="achievement";
+
+        var element = document.body;
+        element.appendChild(para);
+    }
+
+    var speedUp = document.getElementById("speedUp");
+    speedUp.onclick = function () {
+        speed++;
+
+        switch(speed){
+            case 0: showAchievement("静若止水");break;
+            case 5: showAchievement("初入佳境");break;
+            case 20: showAchievement("动若脱兔");break;
+            case 50: showAchievement("风驰电掣");break;
+            case -5: showAchievement("反向旋转");break;
+            case -20: showAchievement("电表倒转");break;
+        }
+
+    }
+
+    var speedDown = document.getElementById("speedDown");
+    speedDown.onclick = function () {
+        speed--;
+        switch(speed){
+            case 0: showAchievement("静若止水");break;
+            case -5: showAchievement("反向旋转");break;
+            case -20: showAchievement("电表倒转");break;
+        }
+    }
+
+    var color1 = document.getElementById("color1");
+    color1.onchange = function () {
+
+        let colors = document.querySelectorAll("#color1>option");
+        for (let i = 0; i < colors.length; i++) {
+            if (colors[i].selected) {
+                color_1 = colors[i].value;
+            }
+        }
+    }
+
+    var color2 = document.getElementById("color2");
+    color2.onchange = function () {
+        let colors = document.querySelectorAll("#color2>option");
+        for (let i = 0; i < colors.length; i++) {
+            if (colors[i].selected) {
+                color_2 = colors[i].value;
+            }
+        }
+    }
+
+</script>
+
+</html>
