@@ -7,8 +7,7 @@ new Vue({
     character: character,
     story: story,
     systemData: {
-      fontSet: false,
-      musicSet: false,
+      set: false,
       fontSize: 15,
       characterShow: true,
     },
@@ -42,7 +41,7 @@ new Vue({
       alert("读取成功！")
     },
     option: function () {
-
+      this.systemData.set=!this.systemData.set;
     },
     musicSet: function () {
       this.systemData.musicSet = !this.systemData.musicSet;

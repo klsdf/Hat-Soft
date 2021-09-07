@@ -12,58 +12,51 @@
 <body>
   <div id="app">
 
-    <div id="characterBar">
-      <button id="character-show" v-on:click="showCharacter">
-        展开人物栏
-      </button>
-      <div v-show="systemData.characterShow==true">
-        <h2>人物状态栏</h2>
-        <div class="state">name：{{character.name}}</div>
-        <div class="state">level：{{character.level}}</div>
-        <div class="state">hp：{{character.hp}}</div>
-        <div class="state">mp：{{character.mp}}</div>
-        <div class="state">atk：{{character.atk}}</div>
-        <div class="state">def：{{character.def}}</div>
-        exp：<progress v-bind:value="character.exp" v-bind:max="maxExp" style="width: 50%;"></progress>
+    <div id="characterBar" v-show="systemData.characterShow==false">
+      <h2>人物状态栏</h2>
+      <div class="state">name：{{character.name}}</div>
+      <div class="state">level：{{character.level}}</div>
+      <div class="state">hp：{{character.hp}}</div>
+      <div class="state">mp：{{character.mp}}</div>
+      <div class="state">atk：{{character.atk}}</div>
+      <div class="state">def：{{character.def}}</div>
+      exp：<progress v-bind:value="character.exp" v-bind:max="maxExp" style="width: 50%;"></progress>
 
-        <h2>装备栏</h2>
-        <div class="equips" v-for="item in character.equips" :key="item.name">
-          {{item.type}}： <abbr v-bind:title="item.describe">{{item.name}}</abbr>
-        </div>
-
-        <h2>物品栏</h2>
-        <div class="items" v-for="item in character.items" :key="item.name" v-on:click="useItem(item.name)"> <abbr
-            v-bind:title="item.describe">{{item.name}}</abbr>：{{item.num}}</div>
+      <h2>装备栏</h2>
+      <div class="equips" v-for="item in character.equips" :key="item.name">
+        {{item.type}}： <abbr v-bind:title="item.describe">{{item.name}}</abbr>
       </div>
+
+      <h2>物品栏</h2>
+      <div class="items" v-for="item in character.items" :key="item.name" v-on:click="useItem(item.name)"> <abbr
+          v-bind:title="item.describe">{{item.name}}</abbr>：{{item.num}}
+      </div>
+
     </div>
 
-    <div id="content"  v-bind:style="{fontSize:systemData.fontSize+'px'}"></div>
+    <div id="content" v-bind:style="{fontSize:systemData.fontSize+'px'}"></div>
     <canvas id="animation">不支持</canvas>
 
     <div id="settingBar">
       <div class="setting-item" v-on:click="save">保存</div>
       <div class="setting-item" v-on:click="load">读取</div>
-      <div class="setting-item" v-on:click="">人物状态栏</div>
-      <div class="setting-item" v-on:click="">物品栏</div>
+      <div class="setting-item" v-on:click="showCharacter">人物状态栏</div>
+      <div class="setting-item" v-on:click="">待扩展</div>
       <div class="setting-item" v-on:click="option">设置</div>
       <div class="setting-item" v-on:click="findMe">帮助</div>
     </div>
 
     <!-- 设置页面 -->
 
-    <div class="setting-page" v-if="systemData.musicSet==true">
+    <div class="setting-page" v-if="systemData.set==true">
       <form>
         音乐大小：<input type="button" value="增加声音" v-on:click="enlargeBGM">或者<input type="button" value="减少声音"
           v-on:click="reduceBGM"> <br />
-      </form>
-    </div>
-
-    <div class="setting-page" v-if="systemData.fontSet==true">
-      <form>
         字体大小：<input type="button" value="增加字体大小" v-on:click="enlargeFont">或者<input type="button" value="减少字体大小"
           v-on:click="reduceFont"> <br />
       </form>
     </div>
+
 
   </div>
 </body>
@@ -77,10 +70,11 @@
     //   var canvas = document.getElementsByTagName('canvas')[0]; //获取canvas元素
     //   canvas.width = document.documentElement.clientWidth;
     //     canvas.height = document.documentElement.clientHeight;
-      
+
     // var ctx = canvas.getContext('2d'); //获取上下文环境（画笔）
     // var text = "hello world";
     // ctx.font = "bold 30px 微軟雅黑";
     // ctx.fillText(text,160,200);
 </script>
+
 </html>

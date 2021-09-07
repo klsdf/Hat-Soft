@@ -26,6 +26,7 @@ canvas{
   text-align: center;
   right: 0px;
   border: 1px white solid;
+  animation: upInto 3s;
 }
 
 #characterBar .state {
