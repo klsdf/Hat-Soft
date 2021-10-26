@@ -7,15 +7,16 @@
   <title>闫辰祥的个人博客</title>
 </head>
 <style>
-
-  body{
-   background-image: url("./2次重构/img/墙纸.jpg");
+  body {
+    background-image: url("./2次重构/img/墙纸.jpg");
+    /* background-color: silver; */
   }
+
   #title {
     margin-top: 35px;
     font-size: 50px;
     text-align: center;
-    font-family:"楷体","楷体_GB2312";
+    font-family: "楷体", "楷体_GB2312";
     text-shadow: 6px 6px 10px black;
     font-weight: bold;
   }
@@ -33,50 +34,71 @@
     background-color: silver;
 
   }
-  .content-element img{
+
+  .content-element img {
     width: 100%;
     height: 100%;
     opacity: 0.6;
   }
-  .content-element .tag{
+
+  .content-element .tag {
     position: absolute;
 
     margin: 0;
 
     font-size: 30px;
-    font-family:"楷体","楷体_GB2312";
+    font-family: "楷体", "楷体_GB2312";
     font-weight: bold;
-    color:lightgoldenrodyellow;
+    color: lightgoldenrodyellow;
 
     /* 位置居中 */
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
 
   }
 
-  .content-element:hover{
+  .content-element:hover {
     cursor: pointer;
   }
 
-  .content-element:hover .tag{
+  .content-element:hover .tag {
     color: brown;
-    
+
   }
 
-  #backTo{
+  #backTo {
     font-weight: 700;
     margin-left: 100px;
   }
-  #backTo:hover{
+
+  #backTo:hover {
     color: red;
     cursor: pointer;
   }
 
-  #content{
+  #content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .disappear{
+    animation: disappear 2s ;
+    animation-fill-mode:forwards;
+  }
+
+
+  @keyframes disappear {
+    0%{
+      left: 0;
+    }
+    50%{
+      left: -1000px;
+    }
+    100% {
+      left: -5000px;
+    }
   }
 </style>
 
@@ -90,36 +112,56 @@
       <img src="./2次重构/img/前端.png" alt="web开发">
       <p class="tag">web开发</p>
     </a>
-  
+
     <div class="content-element">
       <img src="./2次重构/img/戴珍珠耳环的少女.jpg" alt="戴珍珠耳环的少女">
       <p class="tag">艺术</p>
     </div>
-  
-    <a href="./2次重构/music.html" class="content-element">
+
+    <a href="./2次重构/Music/index.html" class="content-element">
       <img src="./2次重构/img/拉赫玛尼诺夫.jpg" alt="拉赫玛尼诺夫">
       <p class="tag">音乐</p>
     </a>
-  
-    <div class="content-element">
-      <img src="./2次重构/img/塞尔达.jpg" alt="web开发">
-      <p class="tag">游戏开发</p>
-    </div>
-  
+
+    <a href="./2次重构/RPGMakerMV/index.html" class="content-element">
+      <img src="./2次重构/img/RPGMV.png" alt="RPGMV">
+      <p class="tag" style="color: black;"></p>
+    </a>
+
     <a href="./2次重构/colors.html" class="content-element">
-      <img src="./2次重构/img/色彩.jpeg" alt="还在想"> 
+      <img src="./2次重构/img/色彩.jpeg" alt="还在想">
       <p class="tag">数字媒体技术</p>
     </a>
-  
-    <a href="./2次重构/Game/index.html" class="content-element">
-      <img src="./2次重构/img/帽子社.png" alt="还在想"> 
+
+    <a href="./2次重构/WebGame/index.html" class="content-element">
+      <img src="./2次重构/img/帽子社.png" alt="还在想">
       <p class="tag" style="color: black;">网页游戏</p>
     </a>
   </div>
- 
- 
-</body>
 
+
+</body>
+<script>
+  // var contentElement = document.getElementsByClassName("content-element");
+
+
+  // for (let i = 0; i < contentElement.length; i++) {
+  //   contentElement[i].onclick = function () {
+  //     disappear();
+  //   }
+  // }
+
+  // function disappear() {
+  //   console.log(123)
+  //   for (let i = 0; i < contentElement.length; i++) {
+  //     contentElement[i].classList.add("disappear")
+  //     //下面是给所有子类添加进入的动画效果
+    
+  //   }
+  // }
+
+
+</script>
 
 
 </html>

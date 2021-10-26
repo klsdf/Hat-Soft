@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="Zh-ch">
+<head>
+    <meta charset="UTF-8">
+    <title>RPGMakerMV全攻略</title>
+    <style>
+        a{
+            text-decoration: none;
+    
+        }
+        #title-bar{
+            height: 200px;
+            position: relative;
+        }
+        #title-background{
+            height: 200px;
+            /* background-color: cyan; */
+            background-image: url("img/RPGMV.png");
+            background-repeat: no-repeat; /*背景图像将仅显示一次*/
+            background-position: center; 
+        
+            opacity: 50%;
+           
+        }
+        #title-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: black;
+            text-align: center;
+            /* line-height: 200px; */
+            font-size: 50px;
+            font-weight: 900;    
+            opacity: 100%;
+        }
+
+        #content-bar{
+            display: flex;
+            margin-top: 30px;
+        }
+        .content-item{
+            flex: 1;
+            height: 200px;
+            /* width: 200px; */
+            background-color: gray;
+            margin-left: 100px;
+            margin-right: 100px;
+            border-radius: 50px;
+
+
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a id="backTo" href="../../index.html">回到首页</a>
+    <div id="title-bar">
+        <div id="title-background"></div>
+        <div id="title-text">RPGMakerMV</div>
+    </div>
+
+    <div id="content-bar">
+        <a href="./html/1.编辑器基础.html" class="content-item">
+            必修一：编辑器基础
+        </a>
+        <a href="./html/2.ECMAScript.html" class="content-item">
+            必修二：JS脚本基础
+        </a>
+        <a href="./html/3.脚本编写基础.html" class="content-item">
+            必修三：JS插件与API实践
+        </a>
+    </div>
+
+</body>
+</html>
