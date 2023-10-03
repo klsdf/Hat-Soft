@@ -1,168 +1,130 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="Zh-ch">
 
 <head>
-  <meta charset="UTF-8">
-  <title>闫辰祥的个人博客</title>
+    <meta charset="UTF-8">
+    <title>帽子社</title>
+    <link rel="shortcut icon" href="./icon/HatSoft.ico">
+    <meta name="description" content="游戏设计的网站">
+    <meta name="keywords" content="游戏开发,游戏美术,音乐,作曲">
+
+
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <script src="./lib/anime.min.js"></script>
+
 </head>
+
+
+
 <style>
-  body {
-    background-image: url("./2次重构/img/墙纸.jpg");
-    /* background-color: silver; */
-  }
-
-  #title {
-    margin-top: 35px;
-    font-size: 50px;
-    text-align: center;
-    font-family: "楷体", "楷体_GB2312";
-    text-shadow: 6px 6px 10px black;
-    font-weight: bold;
-  }
-
-  .content-element {
-    /* 浮动和布局相关 */
-    margin: 60px 20px;
-    width: 260px;
-    height: 415px;
-    position: relative;
-    box-shadow: 15px 15px 20px 4px black;
-    border-radius: 30px;
-    overflow: hidden;
-
-    background-color: silver;
-
-  }
-
-  .content-element img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-  }
-
-  .content-element .tag {
-    position: absolute;
-
-    margin: 0;
-
-    font-size: 30px;
-    font-family: "楷体", "楷体_GB2312";
-    font-weight: bold;
-    color: lightgoldenrodyellow;
-
-    /* 位置居中 */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-
-  }
-
-  .content-element:hover {
-    cursor: pointer;
-  }
-
-  .content-element:hover .tag {
-    color: brown;
-    
-  }
-
-  #backTo {
-    font-weight: 700;
-    margin-left: 100px;
-  }
-
-  #backTo:hover {
-    color: red;
-    cursor: pointer;
-  }
-
-  #content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .disappear{
-    animation: disappear 2s ;
-    animation-fill-mode:forwards;
-  }
-
-
-  @keyframes disappear {
-    0%{
-      left: 0;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    50%{
-      left: -1000px;
+
+    html {
+        background-color: white;
+        color: black;
+        font-family: 'KaiTi', serif;
     }
-    100% {
-      left: -5000px;
+
+    #main-banner {
+        display: block;
     }
-  }
+
+    #main-banner .main-banner-item {
+        flex: 1;
+        color: white;
+        list-style-type: none;
+        position: absolute;
+        z-index: 999;
+        cursor: pointer;
+
+    }
+
+
+
+    #logo-main {
+
+        /* background-image: url("img/帽子社图标.png"); */
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+        /* float: left; */
+    }
+
+    #main-title {
+        padding-top: 40vh;
+        padding-bottom: 40vh;
+
+        font-size: 70px;
+
+        text-align: center;
+
+
+    }
+
+    #sub-main-title {
+        margin-top: 15px;
+        font-size: 40px;
+    }
 </style>
 
 <body>
+    <div id="logo-main"></div>
 
-  <a id="backTo" href="./1次开发/index.html">回到旧版？</a>
-  <div id="title">学而不思则罔，思而不学则殆</div>
-
-  <div id="content">
-    <a href="./2次重构/webDev.html" class="content-element">
-      <img src="./2次重构/img/前端.png" alt="web开发">
-      <p class="tag">web前端</p>
-    </a>
-
-    <div class="content-element">
-      <img src="./2次重构/img/戴珍珠耳环的少女.jpg" alt="戴珍珠耳环的少女">
-      <p class="tag">艺术</p>
+    <div id="main-title">帽子社<div id="sub-main-title">严肃，叛逆，开放</div>
     </div>
 
-    <a href="./2次重构/Music/index.html" class="content-element">
-      <img src="./2次重构/img/拉赫玛尼诺夫.jpg" alt="拉赫玛尼诺夫">
-      <p class="tag">音乐</p>
-    </a>
-
-    <a href="./2次重构/RPGMakerMV/index.html" class="content-element">
-      <img src="./2次重构/img/RPGMV.png" alt="拉赫玛尼诺夫">
-      <p class="tag">RPGMakerMV</p>
-    </a>
-
- 
-
-    <a href="./2次重构/colors.html" class="content-element">
-      <img src="./2次重构/img/色彩.jpeg" alt="还在想">
-      <p class="tag">数字媒体技术</p>
-    </a>
-
-    <a href="./2次重构/WebGame/index.html" class="content-element">
-      <img src="./2次重构/img/帽子社.png" alt="还在想">
-      <p class="tag">网页游戏</p>
-    </a>
-  </div>
+    <ul id="main-banner">
+        <li class="main-banner-item" onclick="run('./component_notes/note_index.html')">教程资料</li>
+    </ul>
 
 
 </body>
+
 <script>
-  // var contentElement = document.getElementsByClassName("content-element");
+    var animation = anime({
+        targets: 'html',
+        color: '#fff',
+        backgroundColor: '#000',
+        duration: 10000,
+        autoplay: false,
+    });
+
+    $("#main-title").click(function () {
+
+        animation.play();
+        // $(this).hide()
+        console.log("ok")
+    })
 
 
-  // for (let i = 0; i < contentElement.length; i++) {
-  //   contentElement[i].onclick = function () {
-  //     disappear();
-  //   }
-  // }
 
-  // function disappear() {
-  //   console.log(123)
-  //   for (let i = 0; i < contentElement.length; i++) {
-  //     contentElement[i].classList.add("disappear")
-  //     //下面是给所有子类添加进入的动画效果
-    
-  //   }
-  // }
+    function run(url) {
+        window.open(url);
 
+    }
+
+    $(document).ready(function()
+    {
+        $(".main-banner-item").each(function(){
+            let left =Math.random()*1000+200
+            let top = Math.random()*500+100
+            $(this).css("left",`${left}px`)
+            $(this).css("top",`${top}px`)
+        })
+    })
+
+  
 
 </script>
 
-
 </html>
+
+
+
+<!-- 1.你是一个专业的前端工程师，拥有非常丰富的html，css和JavaScript编程经验
+2.你非常乐意帮助我完成任何代码，并愿意来解释这些代码的编写原理
+3. 你非常乐意来告诉我编写代码时的独门技巧，并在每次对话时，都会总结一些技巧 -->
