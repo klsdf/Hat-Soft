@@ -12,6 +12,8 @@
     <script src="./lib/jquery-3.6.0.min.js"></script>
     <script src="./lib/anime.min.js"></script>
 
+    <link rel="stylesheet" href="./main.css">
+
 </head>
 
 
@@ -78,8 +80,9 @@
     </div>
 
     <ul id="main-banner">
-        <li class="main-banner-item" onclick="run('./component_notes/index.html')">教程资料</li>
-        <li class="main-banner-item" onclick="run('./component_meetingMinutes/index.html')">会议记录</li>
+        <li class="main-banner-item"><a href="./component_notes/index.html">教程资料</a></li>
+        <li class="main-banner-item"><a href="./component_meetingMinutes/index.html">会议记录</a> </li>
+
     </ul>
 
 
@@ -102,14 +105,23 @@
     })
 
 
-
-    function run(url) {
-        window.open(url);
-
-    }
-
     $(document).ready(function()
     {
+
+        
+    // if(localStorage.getItem("storyIndex")===null )
+    // {
+    //     localStorage.setItem("storyIndex", '0');
+
+    //     // if(localStorage.getItem("storyIndex")=="0"||ocalStorage.getItem("storyIndex")=="1")
+    //     window.location.replace("./game/index.html")
+ 
+
+    // }else{
+
+    // }
+
+
         $(".main-banner-item").each(function(){
             let left =Math.random()*1000+200
             let top = Math.random()*500+100
@@ -118,7 +130,19 @@
         })
     })
 
-  
+
+
+
+//     const data = [
+//   { name: "John", age: 25 },
+//   { name: "Jane", age: 30 },
+//   { name: "Bob", age: 35 }
+// ];
+// const jsonData = JSON.stringify(data);
+// const downloadLink = document.createElement("a");
+// downloadLink.href = "data:text/json;charset=utf-8," + encodeURIComponent(jsonData);
+// downloadLink.download = "data.json";
+// downloadLink.click();
 
 </script>
 

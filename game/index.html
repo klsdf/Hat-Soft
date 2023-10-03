@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="Zh-ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        html {
+            background-color: black;
+            color: white;
+            font-size: 30px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        #content-area {
+            margin-bottom: 40%;
+        }
+    </style>
+
+
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div id="content-area">
+    </div>
+    <script>
+
+        class StroyScript {
+            constructor(text, func) {
+                this.text = text
+                this.func = func
+            }
+        }
+
+        var story0 = [
+            new StroyScript("哎呀，您好"),
+            new StroyScript("一位新的访问者，对吗？"),
+            new StroyScript("欢迎您光临帽子社……"),
+            new StroyScript("虽然小女子很想这样说"),
+            new StroyScript("但是遗憾的是，帽子社的网站仍不够完善"),
+            new StroyScript("，，，"),
+            new StroyScript("啊，果然还是算了吧！"),
+            new StroyScript("小女子无法拿这样的半成品出来向您展示！"),
+            new StroyScript("那么告辞！"),
+            new StroyScript("", function () { localStorage.setItem("hasStartedGame", '1'); window.close() }),
+            new StroyScript("啊，果然还是算了吧！"),
+            new StroyScript("一位新的访问者，对吗？", function () { alert("hello") })
+        ]
+        var story1 = [
+            new StroyScript("，，，您还是回来了"),
+            new StroyScript("", function () { localStorage.setItem("hasStartedGame", '2'); window.close() }),
+        ]
+
+
+        $(document).ready(function () {
+            if(localStorage.getItem("storyIndex")=="0")
+            {
+                story = story0
+            }else
+            {
+                story = story1 
+            }
+            
+
+
+            var $contentDiv = $("#content-area");
+            let index = 1;
+            $(document).click(function () {
+
+                if (index >= story.length) {
+
+                } else {
+                    $contentDiv.append(`<p class="content">${story[index].text}</p>`);
+                    if (story[index].func != undefined) {
+                        story[index].func()
+                    }
+                    index++
+                }
+
+            });
+
+            //默认执行一次
+            $contentDiv.append(`<p class="content">${story[0].text}</p>`);
+
+        });
+    </script>
+
+</body>
+
+</html>
