@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        #records {
+            list-style-type: none;
+            padding: 0;
+            width: 70%;
+            margin: auto;
+        }
+
+        #records li {
+            margin-bottom: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #records li a {
+            text-decoration: none;
+            color: #fff;
+            padding-right: 20px;
+        }
+
+        #records li a:hover {
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">会议记录</h1>
+    <ul id="records">
+        <li>
+            
+                <h2>基于ECS的数值游戏设计</h2>
+                <p><strong>时间：</strong>2023-09-30</p>
+                <p><strong>主讲人：</strong>闫辰祥</p>
+                <p><strong>会议简介：</strong>在本次会议中主要讨论了如何使用ECS架构来设计游戏策划案，以及如何在设计的时候检查策划案的系统是否齐全。</p>
+                <a href="./metting_files/基于ECS的游戏设计.pdf">资料下载</a>
+                <a href="https://www.bilibili.com/video/BV1eV411F7e1/?vd_source=1fb8226c3ee5a8bb358e3fa9f18e29f0">视频链接</a>
+
+        </li>
+    </ul>
+
+    <script>
+        // // 假设 "getMeetingRecords" 是一个返回会议记录数组的函数
+        // var meetingRecords = getMeetingRecords();
+        
+        // var recordsElement = document.getElementById('records');
+
+        // for(var i = 0; i < meetingRecords.length; i++) {
+        //     var record = meetingRecords[i];
+
+        //     var listItem = document.createElement('li');
+        //     listItem.innerHTML = '<a href="' + record.url + '">' + record.title + '</a>';
+
+        //     recordsElement.appendChild(listItem);
+        // }
+    </script>
+</body>
+</html>
