@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>登录及注册页面</title>
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+
+    <style>
+        html {
+            background-color: #000;
+            color: #FFF;
+            padding: 0;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 300px;
+            padding: 16px;
+            background-color: rgb(58, 58, 58);
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        .btn {
+            background-color: #000;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body onload="switchView('login')">
+    <div id="login-container" class="container">
+        <h2>登录页面</h2>
+
+        <div class="form-container">
+            <label for="uname"><b>用户名</b></label>
+            <input type="text" placeholder="请输入用户名" name="uname" required id="login_username">
+
+            <label for="psw"><b>密码</b></label>
+            <input type="password" placeholder="请输入密码" name="psw" required id="login_password">
+
+            <button type="submit" class="btn" onclick="login()">登录</button>
+        </div>
+
+        <p>没有账号？ <a href="#" onclick="switchView('register')">注册账号</a></p>
+    </div>
+
+    <div id="registration-container" class="container">
+        <h2>注册页面</h2>
+
+        <div class="form-container">
+            <label for="uname"><b>用户名</b></label>
+            <input type="text" placeholder="请输入用户名" name="uname" required id="regist_username">
+
+            <label for="psw"><b>密码</b></label>
+            <input type="password" placeholder="请输入密码" name="psw" required id="regist_password">
+
+            <label for="psw-repeat"><b>重复密码</b></label>
+            <input type="password" placeholder="请再次输入密码" name="psw-repeat" required id="regist_password_confirm">
+
+            <button type="submit" class="btn" onclick="register()">注册</button>
+        </div>
+
+        <p>已有账号？ <a href="#" onclick="switchView('login')">前往登录</a></p>
+    </div>
+    <script type="text/javascript">
+        function switchView(view) {
+            var loginContainer = document.getElementById("login-container");
+            var registrationContainer = document.getElementById("registration-container");
+
+            switch (view) {
+                case "login":
+                    loginContainer.style.display = "block";
+                    registrationContainer.style.display = "none";
+                    break;
+
+                case "register":
+                    loginContainer.style.display = "none";
+                    registrationContainer.style.display = "block";
+                    break;
+            }
+        }
+    </script>
+
+    <script>
+
+        //验证两次密码是否一致
+        function passwordConfirm() {
+            let regist_password = $("#regist_password").val()
+            let regist_password_confirm= $("#regist_password_confirm").val()
+
+            return regist_password ===regist_password_confirm
+
+        }
+
+        function register() {
+
+            if(!passwordConfirm())
+            {
+                alert("请确保密码一致")
+                return 
+            }
+          
+
+            let regist_username = $("#regist_username").val()
+            let regist_password = $("#regist_password").val()
+
+            fetch('http://localhost:3000/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user_name: regist_username, user_password: regist_password }),
+            })
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch((error) => console.error('Error:', error));
+        }
+
+        function login() {
+            let login_username = $("#login_username").val()
+            let login_password = $("#login_password").val()
+
+            fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user_name: login_username, user_password: login_password }),
+            })
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch((error) => console.error('Error:', error));
+        }
+
+
+    </script>
+</body>
+
+</html>
