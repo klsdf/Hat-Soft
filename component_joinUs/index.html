@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QQ群介绍</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+
+        }
+
+        .group-container {
+
+            flex: 0 0 30%;
+            margin: 1.5%;
+            margin-bottom: 40px;
+            perspective: 1000px;
+        }
+
+
+
+        .group-flipper {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .group-container:hover .group-flipper {
+            transform: rotateY(180deg);
+        }
+
+        .group-front,
+        .group-back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .group-front {
+            z-index: 2;
+            /* for firefox 31 */
+            transform: rotateY(0deg);
+        }
+
+        .group-back {
+            transform: rotateY(180deg);
+        }
+
+        .group-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .group-description {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .group-container:nth-child(4n+1) {
+            animation: fadein 2s;
+        }
+
+        .group-container:nth-child(4n+2) {
+            animation: slidein 2s;
+        }
+
+        .group-container:nth-child(4n+3) {
+            animation: zoomin 2s;
+        }
+
+        .group-container:nth-child(4n+4) {
+            animation: rotatein 2s;
+        }
+
+        .group-container:nth-child(4n) {
+            animation: bouncein 2s;
+        }
+
+        .highlight {
+            color: rgb(222, 123, 123);
+        }
+
+        @keyframes slidein {
+            from {
+                transform: translateX(-200%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomin {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotatein {
+            from {
+                transform: rotate(-90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotate(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bouncein {
+            0% {
+                transform: translateY(-500px);
+                opacity: 0;
+            }
+
+            38% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            55% {
+                transform: translateY(-65px);
+                opacity: 1;
+            }
+
+            72% {
+                transform: translateY(0);
+            }
+
+            81% {
+                transform: translateY(-28px);
+            }
+
+            90% {
+                transform: translateY(0);
+            }
+
+            95% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-flipper">
+            <div class="group-front">
+                <h2 class="group-title">理论群</h2>
+                <p class="group-description">理论群平时主要聊一些游戏理论和哲学相关的内容</p>
+                <p class="group-description">如果您是一名游戏策划或者游戏爱好者，欢迎加入</p>
+            </div>
+            <div class="group-back">
+                <h2 class="group-title">加入方式</h2>
+                <p class="group-description">qq：529245311</p>
+                <p class="group-description">期待加入喵</p>
+            </div>
+        </div>
+    </div>
+    <div class="group-container">
+        <div class="group-flipper">
+            <div class="group-front">
+                <h2 class="group-title">开发群</h2>
+                <p class="group-description">开发群平时会聊一些游戏开发的内容</p>
+                <p class="group-description">如果您是一名游戏程序员，或者程序爱好者，欢迎加入我们</p>
+            </div>
+            <div class="group-back">
+                <h2 class="group-title">加入方式</h2>
+                <p class="group-description">qq：314074036</p>
+                <p class="group-description">期待加入喵</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="group-container">
+        <div class="group-flipper">
+            <div class="group-front">
+                <h2 class="group-title">音乐群</h2>
+                <p class="group-description">音乐群主要交流音乐创作和古典音乐的话题</p>
+                <p class="group-description">如果您懂作曲，或者热爱音乐都欢迎加入</p>
+            </div>
+            <div class="group-back">
+                <h2 class="group-title">加入方式</h2>
+                <p class="group-description">qq：463807124</p>
+                <p class="group-description">期待加入喵</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="group-container">
+        <div class="group-flipper">
+            <div class="group-front">
+                <h2 class="group-title">qq频道</h2>
+                <p class="group-description">频道是综合讨论区</p>
+                <p class="group-description">欢迎所有人加入喵</p>
+            </div>
+            <div class="group-back">
+                <h2 class="group-title">加入方式</h2>
+                <p class="group-description">点击链接加入QQ频道【帽子社的小窝】：https://pd.qq.com/s/21up36b1r</p>
+                <p class="group-description">期待加入喵</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add more groups here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".group-container").hover(
+                function () {
+                    $(this).toggleClass("highlight");
+                });
+
+            // $(".group-container").click(function () {
+            //     alert("您选择了 " + $(this).find(".group-title").text());
+            // });
+        });
+    </script>
+</body>
+
+</html>

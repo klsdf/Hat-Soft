@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <title>音乐欣赏</title>
+  <style>
+    * {
+      margin: 0PX;
+      padding: 0PX;
+      font-family:"楷体","楷体_GB2312";
+
+      color: aliceblue;
+    }
+
+    #start-page {
+      position: relative;
+      height: 1000px;
+/* 
+      background-image: url("./img/帽子社图标128.png");
+      background-repeat: no-repeat;
+      background-position: center center; */
+
+      background-color: black;
+
+
+
+    }
+
+    #start-page .title {
+
+      /* 位置 */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      /* 字体设置 */
+      font-size: 30px;
+      writing-mode: tb-rl;
+
+
+      /* 动画 */
+      animation: 淡入 2s;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    @keyframes 淡入 {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .normal-page {
+      position: relative;
+
+      height: 700px;
+            
+      background-color: black;
+
+
+    }
+
+    .normal-page .panel {
+
+      position: absolute;
+      /* top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%); */
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      height: 100%;
+      width: 100%;
+    }
+    .normal-page .comment{
+      position: absolute;
+      writing-mode: tb-rl;
+      top: 40%;
+      left: 10%;
+      font-size: 40px;
+    }
+
+
+    #classical-music .panel{
+      background-image: url("./img/1.png");
+    }
+
+    #romantic-music .panel{
+      background-image: url("./img/2.png");
+    }
+
+    #impressionism-music .panel{
+      background-image: url("./img/3.png");
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="start-page">
+    <div class="title">欢迎进入<strong>帽子社</strong>的世界</div>
+  </div>
+
+  <div class="normal-page" id="classical-music">
+    <div class="panel"></div>
+    <div class="comment">游戏理论群</div>
+  </div>
+  
+
+  <div class="normal-page" id="romantic-music">
+    <div class="panel"></div>
+    <div class="comment">游戏开发群</div>
+  </div>
+
+  <div class="normal-page" id="impressionism-music">
+    <div class="panel"></div>
+    <div class="comment">音乐讨论群</div>
+  </div>
+
+
+
+
+</body>
+
+
+<script>
+
+</script>
+
+</html>
