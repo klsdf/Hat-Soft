@@ -1,6 +1,7 @@
 ul, ol,li { list-style: none; }
 
 a { text-decoration: none; }
+a:link {color: white}     /* 未被访问的超链接 */
+a:visited{color: white;}
 a:hover { text-decoration: underline; }
 
-a:visited{color: white;}

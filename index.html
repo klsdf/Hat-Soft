@@ -82,10 +82,10 @@
     <ul id="main-banner">
         <li class="main-banner-item"><a href="./component_notes/index.html">教程资料</a></li>
         <li class="main-banner-item"><a href="./component_meetingMinutes/index.html">会议记录</a> </li>
-        <!-- <li class="main-banner-item"><a href="./component_log_page/index.html">个人页面</a> </li> -->
+        <li class="main-banner-item"><a href="./component_log_page/index.html">个人页面</a> </li>
         <!-- <li class="main-banner-item"><a href="./component_gameCenter/index.html">游戏中心</a> </li> -->
         <li class="main-banner-item"><a href="./component_joinUs/index.html">加入帽子社群</a> </li>
-        <!-- <li class="main-banner-item"><a href="./component_Yingxue/index.html">萤雪网页助手</a> </li> -->
+        <li class="main-banner-item"><a href="./component_Yingxue/index.html">萤雪网页助手</a> </li>
 
     </ul>
 
@@ -102,7 +102,7 @@
     });
 
     $("#main-title").click(function () {
-
+        $(".main-banner-item").show();
         animation.play();
         // $(this).hide()
         console.log("ok")
@@ -112,7 +112,7 @@
     $(document).ready(function()
     {
 
-        
+
     // if(localStorage.getItem("storyIndex")===null )
     // {
     //     localStorage.setItem("storyIndex", '0');
@@ -124,7 +124,7 @@
     // }else{
 
     // }
-
+    $(".main-banner-item").hide();
 
     $(".main-banner-item").each(function(){
             let left = 650;
@@ -155,9 +155,3 @@
 </script>
 
 </html>
-
-
-
-<!-- 1.你是一个专业的前端工程师，拥有非常丰富的html，css和JavaScript编程经验
-2.你非常乐意帮助我完成任何代码，并愿意来解释这些代码的编写原理
-3. 你非常乐意来告诉我编写代码时的独门技巧，并在每次对话时，都会总结一些技巧 -->

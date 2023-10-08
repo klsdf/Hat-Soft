@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #game {
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+#dialogue {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <div id="game">
+        <div id="dialogue">
+          <p id="text"></p>
+          <div id="choices"></div>
+        </div>
+      </div>
+</body>
+
+<script>
+    var dialogues = [
+  {
+    text: 'Hello, welcome to our game!',
+    choices: [
+      { text: 'Thanks!', next: 1 },
+      { text: 'No, thanks.', next: 2 }
+    ]
+  },
+  {
+    text: 'I\'m glad you\'re here!',
+    choices: []
+  },
+  {
+    text: 'Alright, have a good day!',
+    choices: []
+  }
+];
+
+var currentDialogue = 0;
+var dialogueEl = document.getElementById('text');
+var choicesEl = document.getElementById('choices');
+
+function showDialogue(dialogue) {
+  dialogueEl.textContent = dialogue.text;
+
+  while (choicesEl.firstChild) {
+    choicesEl.firstChild.remove();
+  }
+
+  for (var i = 0; i < dialogue.choices.length; i++) {
+    var button = document.createElement('button');
+    button.textContent = dialogue.choices[i].text;
+    button.dataset.next = dialogue.choices[i].next;
+    choicesEl.appendChild(button);
+  }
+}
+
+choicesEl.addEventListener('click', function (e) {
+  if (e.target.tagName === 'BUTTON') {
+    currentDialogue = e.target.dataset.next;
+    showDialogue(dialogues[currentDialogue]);
+  }
+});
+
+showDialogue(dialogues[currentDialogue]);
+</script>
+</html>
