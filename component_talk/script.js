@@ -1,14 +1,20 @@
 let pageNo = 1;
-let msgsPerPage = 100; //每页显示的留言数量 
+let msgsPerPage = 1000; //每页显示的留言数量 
 
 // 发送留言的函数
 document.getElementById('msgForm').addEventListener('submit', function(e) {
     e.preventDefault(); // 阻止提交表单的默认行为
     let inputBox = document.getElementById('inputBox');
     let msg = inputBox.value;
+
+    if(msg=="")
+    {
+        alert("不允许发送空白的留言哦！")
+        return
+    }
     inputBox.value = "";
 
-    fetch('http://localhost:3000/liuyan', {
+    fetch(serverUrl+'/liuyan', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -24,7 +30,7 @@ document.getElementById('msgForm').addEventListener('submit', function(e) {
 
 // 显示留言的函数
 function displayMessages() {
-    fetch(`http://localhost:3000/liuyan?page=${pageNo}&limit=${msgsPerPage}`)
+    fetch(serverUrl+`/liuyan?page=${pageNo}&limit=${msgsPerPage}`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
@@ -43,3 +49,26 @@ function displayMessages() {
 window.onload = function() {
     displayMessages();
 }
+
+
+
+
+function test() {
+    console.log('test')
+}
+
+//节流
+function throttle(func, delay) {
+    let preTime =0;
+    return function () {
+        let nowTime = new Date()
+        if(nowTime-preTime > delay){
+            test()
+            preTime = nowTime;
+        }
+
+    }
+}
+
+window.addEventListener('click', throttle(test, 1000))
+

@@ -1,7 +1,0 @@
-body {
-    font-family: Arial, sans-serif;
-}
-#msgBoard {
-    max-height: 500px;
-    overflow-y: auto;
-}

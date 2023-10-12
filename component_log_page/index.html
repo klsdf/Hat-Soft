@@ -4,7 +4,9 @@
 <head>
     <title>登录及注册页面</title>
     <script src="../lib/jquery-3.6.0.min.js"></script>
-
+    <link rel="stylesheet" href="../main.css">
+    <script src="../main.js"></script>
+    <script src="./main.js"></script>
     <style>
         html {
             background-color: #000;
@@ -27,8 +29,9 @@
         }
 
         input[type=text],
-        input[type=password] {
-            width: 100%;
+        input[type=password],
+        input[type=email]{
+            width: 90%;
             padding: 15px;
             margin: 5px 0 22px 0;
             display: inline-block;
@@ -50,6 +53,19 @@
         .btn:hover {
             opacity: 1;
         }
+
+        #get_emial_verification_code {
+            width: 30%;
+            /* float: left; */
+        }
+        #regist_email_verification_code{
+            width: 55%;
+
+        }
+
+        label{
+            display: block;
+        }
     </style>
 
 </head>
@@ -57,15 +73,31 @@
 <body onload="switchView('login')">
     <div id="login-container" class="container">
         <h2>登录页面</h2>
-
+        <!-- <div id="forgot-container" class="container">
+            <h2>找回密码</h2>
+        
+            <div class="form-container">
+                <label for="uname"><b>用户名</b></label>
+                <input type="text" placeholder="请输入用户名" name="uname" required id="forgot_username">
+        
+                <label for="email"><b>电子邮件</b></label>
+                <input type="email" placeholder="请输入注册时使用的电子邮件地址" name="email" required id="forgot_email">
+        
+                <button type="submit" class="btn" onclick="retrievePassword()">获取重置链接</button>
+            </div>
+        
+            <p>记起密码，想<a href="#" onclick="switchView('login')">返回登录</a>?</p>
+        </div> -->
         <div class="form-container">
             <label for="uname"><b>用户名</b></label>
             <input type="text" placeholder="请输入用户名" name="uname" required id="login_username">
 
             <label for="psw"><b>密码</b></label>
             <input type="password" placeholder="请输入密码" name="psw" required id="login_password">
-
             <button type="submit" class="btn" onclick="login()">登录</button>
+            
+
+            <a href="#" onclick="switchView('forgot')">忘记密码？</a>
         </div>
 
         <p>没有账号？ <a href="#" onclick="switchView('register')">注册账号</a></p>
@@ -84,97 +116,21 @@
             <label for="psw-repeat"><b>重复密码</b></label>
             <input type="password" placeholder="请再次输入密码" name="psw-repeat" required id="regist_password_confirm">
 
+            <label for="email"><b>邮箱</b></label>
+            <input type="email" placeholder="请输入邮箱链接" name="email" required id="regist_email">
+
+            <label for="email_verification_code"><b>邮箱验证码</b></label>
+            <input type="password" placeholder="请输入验证码" name="emial_verification_code" required id="regist_email_verification_code">
+            <button type="text"  class="btn"  id="get_emial_verification_code" onclick="get_verification_code()">获取</button>
+
+
+
+
             <button type="submit" class="btn" onclick="register()">注册</button>
         </div>
 
         <p>已有账号？ <a href="#" onclick="switchView('login')">前往登录</a></p>
     </div>
-    <script type="text/javascript">
-        function switchView(view) {
-            var loginContainer = document.getElementById("login-container");
-            var registrationContainer = document.getElementById("registration-container");
-
-            switch (view) {
-                case "login":
-                    loginContainer.style.display = "block";
-                    registrationContainer.style.display = "none";
-                    break;
-
-                case "register":
-                    loginContainer.style.display = "none";
-                    registrationContainer.style.display = "block";
-                    break;
-            }
-        }
-    </script>
-
-    <script>
-
-        //验证两次密码是否一致
-        function passwordConfirm() {
-            let regist_password = $("#regist_password").val()
-            let regist_password_confirm = $("#regist_password_confirm").val()
-
-            return regist_password === regist_password_confirm
-
-        }
-
-        function register() {
-
-            if (!passwordConfirm()) {
-                alert("请确保密码一致")
-                return
-            }
-
-
-            let regist_username = $("#regist_username").val()
-            let regist_password = $("#regist_password").val()
-
-            fetch('http://localhost:3000/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ user_name: regist_username, user_password: regist_password }),
-            })
-                .then(response => response.text())
-                .then(data => {
-                    alert('注册成功！感谢喵！');
-                    console.log(data)
-                
-                })
-                .catch((error) => console.error('Error:', error));
-        }
-
-        function login() {
-            let login_username = $("#login_username").val()
-            let login_password = $("#login_password").val()
-
-            fetch('http://localhost:3000/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ user_name: login_username, user_password: login_password }),
-            })
-                .then(response => response.text())
-                .then(data => {
-    
-                    if (data) { 
-                        window.location.href = './personalPage.html';  
-                        alert('登录成功！感谢');
-                    } else {
-                        
-                        alert('登录失败！请查看用户名密码是否正确');
-                    }
-                })
-                .catch((error) => console.error('Error:', error));
-        }
-
-
-    </script>
 </body>
 
 </html>
-
-
