@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             padding: 0;
             margin: 0;
-            background-color: #fff;
-            color: #000;
+            background-color: #000;
+            color: #fff;
         }
         .header {
             background-color: #000;
@@ -38,7 +38,7 @@
         .website-link {
             font-size: 18px;
             font-weight: bold;
-            color: #000;
+            color: #fff; 
             text-decoration: none;
         }
     </style>
@@ -47,34 +47,117 @@
     <div class="header">
         <h1>游戏资源汇总</h1>
     </div>
-    <div class="main">
 
+
+    <div>
+        须知：
+    </div>
+    <div class="main">
         <div>
             <h2>综合资源</h2>
-            <div class="category-container">
-                <div class="website-item">
-                    <a href="https://www.aigei.com/" target="_blank" class="website-link">爱给网</a>
-                    <p>很多图像和音效等资源的网站</p>
-                </div>
-                
-                <!-- 在这添加更多的链接 -->
+            <div class="category-container" id="综合">
             </div>
 
         </div>
        
         <div>
-            <h2>游戏音效</h2>
-            <div class="category-container">
-                <div class="website-item">
-                    <a href="https://maou.audio/profile/" target="_blank" class="website-link">魔王魂</a>
-                    <p>一个免费音乐音效的网站</p>
-                </div>
-             
-                <!-- 在这添加更多的链接 -->
+            <h2>游戏音效和音乐</h2>
+            <div class="category-container" id="音效">
             </div>
-
         </div>
-     
+
+        
+        <div>
+            <h2>游戏美术</h2>
+            <div class="category-container" id="美术">
+            </div>
+        </div>
+
+        <div>
+            <h2>游戏技术</h2>
+            <div class="category-container" id="技术">
+            </div>
+        </div>
+
+        <div>
+            <h2>AI美术学习</h2>
+            <div class="category-container" id="ai美术">
+            </div>
+        </div>
+
+        
+        <div>
+            <h2>求职</h2>
+            <div class="category-container" id="求职">
+            </div>
+        </div>
+
     </div>
 </body>
+
+<script>
+    class GameAssert
+    {
+        constructor(name, url, description) {
+            this.name = name;
+            this.url = url;
+            this.description = description;
+        }
+
+        getHtml() {
+            return `
+                <div class="website-item">
+                    <a href="${this.url}" target="_blank" class="website-link">${this.name}</a>
+                    <p>${this.description}</p>
+                </div>`;
+        }
+
+    }
+
+
+    function createDiv(divName,assets)
+    {
+        let container = document.querySelector(`#${divName}`);
+
+        assets.forEach(element => {
+            container.innerHTML += element.getHtml();
+        });
+    }
+
+    let assetsComprehensive = []
+    assetsComprehensive.push(new GameAssert('爱给网', 'https://www.aigei.com/', '很多图像和音效等资源的网站'))
+
+    createDiv("综合",assetsComprehensive)
+
+    let assetsMusic = []
+    assetsMusic.push(new GameAssert('魔王魂', 'https://maou.audio/profile/', '一个免费音乐音效的网站'))
+    assetsMusic.push(new GameAssert('Pizza No.8', 'https://www.youtube.com/channel/UCvWE6e-i-frDpoAC0-OBsGg', '一个youtube博主，分享了很多游戏的音效素材。'))
+    createDiv("音效",assetsMusic)
+
+
+    let assetsImage = []
+    assetsImage.push(new GameAssert('花瓣', 'https://huaban.com/?keep=true', '一个面向设计师的网站，有很多图片素材，你可以在里面找到需要的游戏UI和游戏资产参考。'))
+    assetsImage.push(new GameAssert('pinterest', 'https://www.pinterest.com/', '一个面向设计师的网站。'))
+    assetsImage.push(new GameAssert('eagle', 'https://community-cn.eagle.cool/', ''))
+
+    createDiv("美术",assetsImage)
+
+
+    let assetsTec = []
+    assetsTec.push(new GameAssert('技你太美', 'http://jntm101.com/', '技术美术的交流论坛'))
+    assetsTec.push(new GameAssert('LearnOpenGL', 'https://learnopengl-cn.github.io/', '技术美术必学的知识，国内最详细的opengl教程'))
+    assetsTec.push(new GameAssert('Unity C# Tutorials', 'https://learnopengl-cn.github.io/', '全网最为系统unity c#教程，有很多进阶内容，包括shader，mesh编程等。很全很专业。'))
+    
+    createDiv("技术",assetsTec)
+
+
+    let assetsAiArt = []
+    assetsAiArt.push(new GameAssert('Danbooru 标签超市', 'https://tags.novelai.dev/', ''))
+    createDiv("ai美术",assetsAiArt)
+
+    
+
+
+</script>
 </html>
+
