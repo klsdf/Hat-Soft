@@ -21,8 +21,9 @@ document.getElementById('msgForm').addEventListener('submit', function(e) {
         },
         body: JSON.stringify({ message: msg }),
     })
-    .then(response => response.json())
+    // .then(response => response.json())
     .then(data => {
+        location.reload()
         // 在这里处理服务器的回应
     })
     .catch((error) => console.error('Error:', error));
