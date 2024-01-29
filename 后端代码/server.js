@@ -7,8 +7,9 @@
 const express = require('express')
 const cors = require('cors')
 const cookieParser = require('cookie-parser');
+const path = require("path");
 
-const PORT = process.env.PORT || 3000
+const PORT =  3000
 
 let app = express()
 
@@ -18,12 +19,13 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-app.use(require("./router"))
-
+app.use(require("./router/index.js"))
+app.use(require("./router/user.js"))
+app.use(require("./router/chat.js"))
+app.use(require("./router/blog.js"))
+app.use(express.static(path.resolve(__dirname, "static")));
 
 app.use((err, req, res, next) => {
-
-
     res.status(err.status || 500);
     // // 渲染错误处理页
     // res.render('error', {
@@ -33,7 +35,6 @@ app.use((err, req, res, next) => {
     // });
     
     res.send(err.message)
-
 })
 
 app.listen(PORT, () => {

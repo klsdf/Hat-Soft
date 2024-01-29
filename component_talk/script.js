@@ -52,24 +52,37 @@ window.onload = function() {
 }
 
 
-
-
-function test() {
-    console.log('test')
+function clearAll()
+{
+    fetch(serverUrl+'/allLiuYan', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then(data => {
+          console.log(data); // 成功时的处理
+          location.reload()
+        })
+        .catch(error => {
+          console.error('Error:', error); // 错误处理
+        });
 }
+
+
 
 //节流
-function throttle(func, delay) {
-    let preTime =0;
-    return function () {
-        let nowTime = new Date()
-        if(nowTime-preTime > delay){
-            test()
-            preTime = nowTime;
-        }
+// function throttle(func, delay) {
+//     let preTime =0;
+//     return function () {
+//         let nowTime = new Date()
+//         if(nowTime-preTime > delay){
+//             test()
+//             preTime = nowTime;
+//         }
 
-    }
-}
+//     }
+// }
 
-window.addEventListener('click', throttle(test, 1000))
+// window.addEventListener('click', throttle(test, 1000))
 
