@@ -21,12 +21,37 @@ db.serialize(function () {
             return console.log(err.message)
         }
     })
+    db.run(`CREATE TABLE IF NOT EXISTS  Visited(visitedNum INTEGER);`, function (err) {
+        if (err) {
+            return console.log(err.message)
+        }
+    })
     db.run(`
     CREATE TABLE IF NOT EXISTS VerifyCodeTable(
         email TEXT PRIMARY KEY, 
         code TEXT NOT NULL
       );
     `)
+
+    // 检查 Visited 表是否为空
+    db.get(`SELECT COUNT(*) as count FROM Visited;`, function (err, row) {
+        if (err) {
+            return console.log(err.message);
+        }
+
+        if (row.count === 0) {
+            // 当表为空时才插入记录
+            db.run(`INSERT INTO Visited (visitedNum) VALUES (0);`, function (err) {
+                if (err) {
+                    return console.log(err.message);
+                }
+                console.log('成功插入 visitedNum 值为 0 的记录！');
+            });
+        } else {
+            console.log('Visited 表不为空，无需插入记录。');
+        }
+    });
+
 });
 
 module.exports = db

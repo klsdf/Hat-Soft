@@ -5,7 +5,7 @@ const sqlite3 = require('sqlite3').verbose()
 const md5 = require('../util/md5')
 const db = require('../db')
 
-app.delete('/user/:name', (req, res) => {
+router.delete('/user/:name', (req, res) => {
     const userName = req.params.name;
 
     if (!userName) {
