@@ -3,6 +3,8 @@
 // npm install sqlite3 --save
 // npm install cookie-parser --save
 //npm install nodemailer --save
+//npm install path --save
+//npm install cors --save
 
 const express = require('express')
 const cors = require('cors')
