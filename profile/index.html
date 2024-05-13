@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简历</title>
+<link rel="stylesheet" href="./main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>个人网页</h1>
+    </header>
+    <nav>
+        <span id="home">首页</span>
+        <span id="games">游戏</span>
+        <span id="articles">文章</span>
+        <span  id="music" >音乐</span>
+ 
+    </nav>
+    <main>
+        <!-- 首页 -->
+        <section class="home-section">
+            <h2>欢迎来到我的个人网页</h2>
+            <p>在这里展示你的作品。</p>
+        </section>
+
+
+        <section  class="game-section">
+            <h2>我的游戏</h2>
+            <p>在这里放置游戏简介和下载链接。</p>
+            <p><a href="#">游戏下载链接</a></p>
+        </section>
+        <section  class="article-section">
+            <h2>我的文章</h2>
+            <p>展示你编写的文章列表。</p>
+            <ul>
+                <li><a href="#">文章标题1</a></li>
+                <li><a href="#">文章标题2</a></li>
+                <li><a href="#">文章标题3</a></li>
+            </ul>
+        </section>
+        <section class="music-section">
+            <h2>我的音乐</h2>
+            <p>展示你制作的音乐。</p>
+            <audio controls>
+                <source src="your_music.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <footer>
+        <p>到底了~</p>
+    </footer>
+</body>
+
+
+<script>
+
+
+
+
+$(document).ready(function() {
+    $('#articles').click(function() {
+        $('.article-section').show();
+        $('.game-section, .music-section').hide();
+    });
+
+    $('#games').click(function() {
+        $('.game-section').show();
+        $('.article-section, .music-section').hide();
+    });
+
+    $('#music').click(function() {
+        $('.music-section').show();
+        $('.article-section, .game-section').hide();
+    });
+});
+
+
+</script>
+</html>
