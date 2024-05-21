@@ -1,3 +1,6 @@
+
+ /* 基础部分 */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #333;
@@ -23,17 +26,58 @@ nav a {
 main {
     padding: 20px;
 }
-.game-section {
+section {
     margin-bottom: 40px;
 }
-.article-section {
-    margin-bottom: 40px;
-}
-.music-section {
-    margin-bottom: 40px;
-}
+
 footer {
     background-color: #222;
     text-align: center;
     padding: 10px 0;
 }
+
+
+#games,#articles,#music
+{
+    cursor: pointer;
+}
+
+
+
+
+/* 游戏部分 */
+
+.game-section .game-item
+{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.game-section .game-item img
+{
+    height: 400px;
+
+}
+
+
+.game-section .game-item .right-area
+{
+    width: 100%;
+    margin-left: 2%;
+
+}
+
+
+
+.game-section .game-item .game-name
+{
+    text-align: center;
+
+}
+
+

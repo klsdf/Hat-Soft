@@ -4,79 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简历</title>
+    <title>作品集</title>
     <link rel="stylesheet" href="./main.css">
 
-
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>个人网页</h1>
+        <h1>作品集</h1>
     </header>
-    <nav>
-        <span id="home">首页</span>
-        <span id="games">游戏</span>
-        <span id="articles">文章</span>
-        <span id="music">音乐</span>
 
-    </nav>
-    <main>
-        <!-- 首页
-        <section class="home-section">
-            
-
-
-        </section> -->
-
-
-        <section class="game-section">
-            <div id="game-preview">
-
-                <img src="game1.jpg" class="d-block w-100" alt="游戏截图1">
-
-
-                <img src="game2.jpg" class="d-block w-100" alt="游戏截图2">
-
-
-                <img src="game3.jpg" class="d-block w-100" alt="游戏截图3">
-
-            </div>
-
-            <div id="game-info">
-                <div class="game-name"></div>
-                <p>在这里放置游戏简介和下载链接。</p>
-                <p><a href="#">游戏下载链接</a></p>
-                <div>游戏设计思想</div>
-            </div>
-
-
-
-
-        </section>
+    <div id="tabs">
+        <nav>
+            <span id="games">游戏</span>
+            <span id="articles">文章</span>
+            <span id="music">音乐</span>
+    
+        </nav>
+        <main>
+    
+    
+            <section class="game-section">
+    
+   
+              
+            </section>
+    
+    
+    
+    
+            <section class="article-section">
+                <h2>我的文章</h2>
+                <p>展示你编写的文章列表。</p>
+                <ul>
+                    <li><a href="#">文章标题1</a></li>
+                    <li><a href="#">文章标题2</a></li>
+                    <li><a href="#">文章标题3</a></li>
+                </ul>
+            </section>
+            <section class="music-section">
+                <h2>我的音乐</h2>
+                <p>展示你制作的音乐。</p>
+                <audio controls>
+                    <!-- <source src="your_music.mp3" type="audio/mp3"> -->
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+        </main>
 
 
-
-
-        <section class="article-section">
-            <h2>我的文章</h2>
-            <p>展示你编写的文章列表。</p>
-            <ul>
-                <li><a href="#">文章标题1</a></li>
-                <li><a href="#">文章标题2</a></li>
-                <li><a href="#">文章标题3</a></li>
-            </ul>
-        </section>
-        <section class="music-section">
-            <h2>我的音乐</h2>
-            <p>展示你制作的音乐。</p>
-            <audio controls>
-                <source src="your_music.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
-    </main>
+    </div>
+   
     <footer>
         <p>到底了~</p>
     </footer>
@@ -84,57 +66,10 @@
 
 
 <script>
+//  $(function() {
+//     $( "#tabs" ).tabs();
+//   });
 
-    
-class GameInfo
-{
-    constructor(title,info,pic,link)
-    {
-        //初始化 
-        this.title = title;
-        this.info = info;
-        this.pic = pic;
-        this.link = link;
-    }
-}
-
-
-let game1 =  new GameInfo("姆姆因子","这是一个游戏","game1.jpg");
-let game2 =  new GameInfo("游戏1","这是一个游戏","game1.jpg");
-
-
-
-
-//根据game1 来生成对应的html，使用jquery
-var game1_html = "<div class='game-name'>"+game1.title+"</div><p>"+game1.info+"</p><p><a href='#'>游戏下载链接</a></p><div>游戏设计思想</div>";
-
-
-
-
-
-    $(document).ready(function () {
-
-        $('.game-section').show();
-        $('.article-section, .music-section').hide();
-
-
-
-
-        $('#articles').click(function () {
-            $('.article-section').show();
-            $('.game-section, .music-section').hide();
-        });
-
-        $('#games').click(function () {
-            $('.game-section').show();
-            $('.article-section, .music-section').hide(); 
-        });
-
-        $('#music').click(function () {
-            $('.music-section').show();
-            $('.article-section, .game-section').hide();
-        });
-    });
 
 
 </script>
