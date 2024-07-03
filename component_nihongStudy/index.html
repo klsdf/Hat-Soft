@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>莲华帮你复习n1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('bg_彼岸花畑夜現実.png');
+            background-size: cover;
+            color: aliceblue;
+
+        }
+
+        .word {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .options {
+            margin-top: 20px;
+        }
+
+        .option {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .correct {
+            background-color: #005a00;
+            border-color: #c3e6cb;
+
+        }
+
+        .incorrect {
+            background-color: #ff0015;
+            border-color: #f5c6cb;
+        }
+
+        button {
+            cursor: pointer;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            background-color: #20000059;
+
+        }
+
+        #next-btn {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+
+
+
+        }
+
+        #progress {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        #timeSpent {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        #stats {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .corner-image {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 450px;
+            height: auto;
+            z-index: -99;/* 图片层低 */
+        }
+    </style>
+    <script>
+        let textData = [];
+        let currentIndex = 0;
+        let correctAnswers = 0;
+        let startTime = null;
+
+        async function fetchData(selectedLessonId) {
+            try {
+                const response = await fetch('video_data.json');
+                const data = await response.json();
+
+                // 找到选择的课程数据
+                const selectedLesson = data.find(lesson => lesson.id === selectedLessonId);
+                console.log(selectedLesson)
+                if (selectedLesson) {
+                    textData = selectedLesson.data;
+                    loadQuestion();
+                } else {
+                    console.error('找不到选择的课程数据。');
+                }
+            } catch (error) {
+                console.error('获取数据失败：', error);
+            }
+        }
+
+        function loadQuestion() {
+            const currentData = textData[currentIndex];
+            document.querySelector('.word').textContent = currentData.word;
+
+            const correctOption = currentData.explain;
+            const incorrectOptions = textData
+                .filter((_, index) => index !== currentIndex)
+                .map(data => data.explain);
+
+            // 随机选择三个错误选项
+            const options = [
+                correctOption,
+                ...getRandomElements(incorrectOptions, 3)
+            ];
+
+            shuffleArray(options);
+
+            const optionsContainer = document.querySelector('.options');
+            optionsContainer.innerHTML = '';
+            options.forEach(optionText => {
+                const option = document.createElement('div');
+                option.textContent = optionText;
+                option.className = 'option';
+                option.onclick = () => checkAnswer(option, optionText === correctOption);
+                optionsContainer.appendChild(option);
+            });
+
+            document.getElementById('next-btn').style.display = 'none';
+        }
+
+        function getRandomElements(array, numElements) {
+            const shuffled = array.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, numElements);
+        }
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function checkAnswer(option, isCorrect) {
+            const currentData = textData[currentIndex];
+
+            if (isCorrect) {
+                option.classList.add('correct');
+                correctAnswers++;
+                updateStats();
+
+                document.getElementById('tachie').src = "tachie/蓮華_中_制服1_053笑顔4.png"
+            } else {
+                option.classList.add('incorrect');
+                document.getElementById('tachie').src = "tachie/蓮華_中_制服1_128照れ49.png"
+            }
+            playAudio(currentData.audio_path_example);
+            document.getElementById('next-btn').style.display = 'block';
+
+            document.getElementById("example").innerHTML = currentData.example
+            document.getElementById('example').style.display = 'block';
+        }
+
+
+        function playAudio(audioPath) {
+            console.log(audioPath)
+            if (audioPath) {
+                const audio = new Audio(audioPath);
+                audio.play().catch(error => {
+                    console.error('Failed to play audio:', error);
+                });
+            }
+        }
+        function updateStats() {
+            const progress = `${currentIndex + 1} / ${textData.length}`;
+            document.getElementById('progress').textContent = `进度：${progress}`;
+
+            const currentTime = new Date();
+            const timeSpent = Math.floor((currentTime - startTime) / 1000); // in seconds
+            document.getElementById('timeSpent').textContent = `用时：${timeSpent} 秒`;
+
+            document.getElementById('stats').textContent = `答对题目：${correctAnswers}`;
+        }
+
+        function nextQuestion() {
+            currentIndex = (currentIndex + 1) % textData.length;
+            loadQuestion();
+            updateStats();
+            document.getElementById('example').style.display = 'none';
+            document.getElementById('tachie').src = "tachie/蓮華_中_制服1_002通常2.png"
+        }
+
+        window.onload = function () {
+            fetchData(8)
+        }
+
+
+
+        startTime = new Date();
+        setInterval(() => {
+            currentTime = new Date()
+            document.getElementById('timeSpent').innerHTML = ` ${Math.floor((currentTime - startTime) / 1000)}秒`; // in seconds
+        }, 1000)
+
+
+
+        function touch() {
+            document.getElementById('tachie').src = "tachie/蓮華_中_制服1_083照れ4.png"
+        }
+
+        function selectLesson(lessonId) {
+            fetchData(lessonId);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="progress"></div>
+    <div id="stats"></div>
+    <div id="timeSpent"></div>
+    <div class="word"></div>
+    <div class="options"></div>
+    <button id="next-btn" onclick="nextQuestion()">下一题</button>
+    <div> 例句：<div id="example"></div>
+    </div>
+
+    <img id="tachie" src="tachie/蓮華_中_制服1_002通常2.png" alt="描述图片的文字" class="corner-image" onclick="touch()">
+    <div id="lesson-selection">
+        <div>课程选择:</div>
+        <button onclick="selectLesson(8)">第8课</button>
+        <button onclick="selectLesson(9)">第9课</button>
+        <button onclick="selectLesson(10)">第10课</button>
+    </div>
+</body>
+
+</html>

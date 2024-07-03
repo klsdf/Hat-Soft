@@ -1,0 +1,552 @@
+[
+    {
+        "id": 1,
+        "data": []
+    },
+    {
+        "id": 2,
+        "data": []
+    },
+    {
+        "id": 3,
+        "data": []
+    },
+    {
+        "id": 4,
+        "data": []
+    },
+    {
+        "id": 5,
+        "data": []
+    },
+    {
+        "id": 6,
+        "data": []
+    },
+    {
+        "id": 7,
+        "data": []
+    },
+    {
+        "id": 8,
+        "data": [
+            {
+                "word": "納品（のうひん）",
+                "explain": "品物を納入すること。交付（他人が注文した商品）。\n配達。渡す商品。",
+                "example": "うちの工場から直接先方に納品する手筈（てはず）になってますが。",
+                "audio_path_explain": "audio/8/納品_explain.mp3",
+                "audio_path_example": "audio/8/納品_example.mp3"
+            },
+            {
+                "word": "前倒し（まえたおし）",
+                "explain": "納期を早めること。",
+                "example": "工場に納期の前倒しを頼んでみてください。",
+                "audio_path_explain": "audio/8/前倒し_explain.mp3",
+                "audio_path_example": "audio/8/前倒し_example.mp3"
+            },
+            {
+                "word": "広報（こうほう）",
+                "explain": "企業や団体が広告を出すための活動。広告宣伝。",
+                "example": "来月号の広報誌の表紙の案に目を通しました。",
+                "audio_path_explain": "audio/8/広報_explain.mp3",
+                "audio_path_example": "audio/8/広報_example.mp3"
+            },
+            {
+                "word": "雇う（やとう）",
+                "explain": "仕事をする人を雇うこと。",
+                "example": "アルバイトを雇う（採用する）。",
+                "audio_path_explain": "audio/8/雇う_explain.mp3",
+                "audio_path_example": "audio/8/雇う_example.mp3"
+            },
+            {
+                "word": "見込み（みこみ）",
+                "explain": "予測。見込むこと。",
+                "example": "地図上では休憩できる場所が２か所ありますが、\n2時間ほどで終わる見込みですので、休憩を挟まずに行きます。",
+                "audio_path_explain": "audio/8/見込み_explain.mp3",
+                "audio_path_example": "audio/8/見込み_example.mp3"
+            },
+            {
+                "word": "契約書（けいやくしょ）",
+                "explain": "契約を書き記した文書。合意の証。",
+                "example": "契約書を結ぶ。",
+                "audio_path_explain": "audio/8/契約書_explain.mp3",
+                "audio_path_example": "audio/8/契約書_example.mp3"
+            },
+            {
+                "word": "打ち合わせ",
+                "explain": "会議や商談などで話し合うこと。",
+                "example": "議題の打ち合わせをする。",
+                "audio_path_explain": "audio/8/打ち合わせ_explain.mp3",
+                "audio_path_example": "audio/8/打ち合わせ_example.mp3"
+            },
+            {
+                "word": "見出し（みだし）",
+                "explain": "文章や資料の中で主題や章立てを示す言葉。",
+                "example": "新聞の見出し（主題）だけ読む。",
+                "audio_path_explain": "audio/8/見出し_explain.mp3",
+                "audio_path_example": "audio/8/見出し_example.mp3"
+            },
+            {
+                "word": "目次（もくじ）",
+                "explain": "本や書類の内容を章や節ごとに整理した一覧。",
+                "example": "目次を入れる。",
+                "audio_path_explain": "audio/8/目次_explain.mp3",
+                "audio_path_example": "audio/8/目次_example.mp3"
+            },
+            {
+                "word": "目を通す（めをとおす）",
+                "explain": "ざっと読んで内容を確認すること。",
+                "example": "来月号の広報誌の表紙の案に目を通しました。",
+                "audio_path_explain": "audio/8/目を通す_explain.mp3",
+                "audio_path_example": "audio/8/目を通す_example.mp3"
+            },
+            {
+                "word": "目ぼしい（めぼしい）",
+                "explain": "注目すべき価値や可能性があること。",
+                "example": "大学院の後輩で目ぼしい人はいないかな？",
+                "audio_path_explain": "audio/8/目ぼしい_explain.mp3",
+                "audio_path_example": "audio/8/目ぼしい_example.mp3"
+            },
+            {
+                "word": "詰める（つめる）",
+                "explain": "空間に物を詰め込むこと。",
+                "example": "箱の隙間に新聞紙を詰める。",
+                "audio_path_explain": "audio/8/詰める_explain.mp3",
+                "audio_path_example": "audio/8/詰める_example.mp3"
+            },
+            {
+                "word": "ノーベル賞受賞者",
+                "explain": "凄い人。",
+                "example": "彼はその革新的な研究によりノーベル賞を受賞しました。",
+                "audio_path_explain": "audio/8/ノーベル賞受賞者_explain.mp3",
+                "audio_path_example": "audio/8/ノーベル賞受賞者_example.mp3"
+            },
+            {
+                "word": "振り回す（ふりまわす）",
+                "explain": "むやみ勝手に使う。",
+                "example": "レッドウィンターのチェリノちゃんはいつも権力を振り回す。",
+                "audio_path_explain": "audio/8/振り回す_explain.mp3",
+                "audio_path_example": "audio/8/振り回す_example.mp3"
+            },
+            {
+                "word": "馴染む（なじむ）",
+                "explain": "環境や集団に慣れて、溶け込むこと。",
+                "example": "先月バイトで入った小野さん、\nうちのチームに馴染んでいますね。",
+                "audio_path_explain": "audio/8/馴染む_explain.mp3",
+                "audio_path_example": "audio/8/馴染む_example.mp3"
+            },
+            {
+                "word": "揉める（もめる）",
+                "explain": "問題が生じて争うこと。",
+                "example": "役員が揉めているみたいだね。",
+                "audio_path_explain": "audio/8/揉める_explain.mp3",
+                "audio_path_example": "audio/8/揉める_example.mp3"
+            },
+            {
+                "word": "外れる（はずれる）",
+                "explain": "期待や予想と違っていること。",
+                "example": "駅前にできたラーメン屋に行ったけど、\n一時間並んでまで食べるほどじゃなかった。期待外れだったんだね。",
+                "audio_path_explain": "audio/8/外れる_explain.mp3",
+                "audio_path_example": "audio/8/外れる_example.mp3"
+            },
+            {
+                "word": "ややこしい",
+                "explain": "複雑で理解しにくいこと。",
+                "example": "うちの会社、最近経理のソフトウェアを変えたんだけど、\n使い方がややこしくて先が思いやられるよ。",
+                "audio_path_explain": "audio/8/ややこしい_explain.mp3",
+                "audio_path_example": "audio/8/ややこしい_example.mp3"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "data": [
+            {
+                "word": "闇（やみ）",
+                "explain": "光がない、暗闇のこと。",
+                "example": "黒より黒く闇より、\n暗き漆黒に我が深紅の混淆を望みたもう。\n覚醒のとき来たれり。\nエクスプロージョン！",
+                "audio_path_explain": "audio/9/闇_explain.mp3",
+                "audio_path_example": "audio/9/闇_example.mp3"
+            },
+            {
+                "word": "退く（しりぞく）",
+                "explain": "職や地位を辞める。",
+                "example": "年齢のため、彼は社長の職を退くことにした。",
+                "audio_path_explain": "audio/9/退く_explain.mp3",
+                "audio_path_example": "audio/9/退く_example.mp3"
+            },
+            {
+                "word": "惨め（みじめ）",
+                "explain": "非常に悲しく、哀れで、情けない状態。",
+                "example": "げんしんを遊ばず、一人で人生を惨めに過ごした。",
+                "audio_path_explain": "audio/9/惨め_explain.mp3",
+                "audio_path_example": "audio/9/惨め_example.mp3"
+            },
+            {
+                "word": "祈り（いのり）",
+                "explain": "祈ること。",
+                "example": "ミファーの祈り、いつでも使えるよ。",
+                "audio_path_explain": "audio/9/祈り_explain.mp3",
+                "audio_path_example": "audio/9/祈り_example.mp3"
+            },
+            {
+                "word": "護り（まもり）",
+                "explain": "安全に保つ。",
+                "example": "ダルケルの護り、いつでも使えるぜ。",
+                "audio_path_explain": "audio/9/護り_explain.mp3",
+                "audio_path_example": "audio/9/護り_example.mp3"
+            },
+            {
+                "word": "猛り（たけり）",
+                "explain": "荒れ狂う。",
+                "example": "リーバルの猛り(トルネード)、いつでもOKだ。",
+                "audio_path_explain": "audio/9/猛り_explain.mp3",
+                "audio_path_example": "audio/9/猛り_example.mp3"
+            },
+            {
+                "word": "怒り（いかり）",
+                "explain": "強い怒りの感情。",
+                "example": "ウルボザの怒り、いつでも放てるよ。",
+                "audio_path_explain": "audio/9/怒り_explain.mp3",
+                "audio_path_example": "audio/9/怒り_example.mp3"
+            },
+            {
+                "word": "ポテンシャル",
+                "explain": "潜在すること。また，可能性としての力。potential。",
+                "example": "蓮華ちゃんは私の嫁になれるポテンシャルが高い。",
+                "audio_path_explain": "audio/9/ポテンシャル_explain.mp3",
+                "audio_path_example": "audio/9/ポテンシャル_example.mp3"
+            },
+            {
+                "word": "ぽっとしない",
+                "explain": "目立たない、印象に残らない、特に優れていない。",
+                "example": "ミユちゃんはぱっとしない兎ちゃんので、\n狙撃手を担当できます。",
+                "audio_path_explain": "audio/9/ぽっとしない_explain.mp3",
+                "audio_path_example": "audio/9/ぽっとしない_example.mp3"
+            },
+            {
+                "word": "ぎくしゃく",
+                "explain": "物事や人間関係がうまくいかず、滑らかでない様子。",
+                "example": "クラシック（CRYCHIC）のメンバーの\n関係がぎくしゃくしている。",
+                "audio_path_explain": "audio/9/ぎくしゃく_explain.mp3",
+                "audio_path_example": "audio/9/ぎくしゃく_example.mp3"
+            },
+            {
+                "word": "ありきたり",
+                "explain": "ありふれていて特別ではない、平凡で目新しさがない。",
+                "example": "蓮華ちゃんのパンツはありきたりの白いタイプです。\n（prprprprprprprprprprprprprprpr）",
+                "audio_path_explain": "audio/9/ありきたり_explain.mp3",
+                "audio_path_example": "audio/9/ありきたり_example.mp3"
+            },
+            {
+                "word": "といったらない",
+                "explain": "とても〜だ、最高（さいこう）に〜だ。",
+                "example": "蓮華ちゃんは美しいといったらない。",
+                "audio_path_explain": "audio/9/といったらない_explain.mp3",
+                "audio_path_example": "audio/9/といったらない_example.mp3"
+            },
+            {
+                "word": "てからというもの",
+                "explain": "その出来事を境に、その後ずっと。（自从）",
+                "example": "辞職してからというもの、元気に戻った。",
+                "audio_path_explain": "audio/9/てからというもの_explain.mp3",
+                "audio_path_example": "audio/9/てからというもの_example.mp3"
+            },
+            {
+                "word": "までもない",
+                "explain": "それをする必要がない。",
+                "example": "蓮華ちゃんの可愛さは誰でも知っているから、\n言うまでもない。",
+                "audio_path_explain": "audio/9/までもない_explain.mp3",
+                "audio_path_example": "audio/9/までもない_example.mp3"
+            },
+            {
+                "word": "ないまでも",
+                "explain": "そこまでではないが、それに近い状態。",
+                "example": "１００点は取れないまでも、８０点は取りたい。",
+                "audio_path_explain": "audio/9/ないまでも_explain.mp3",
+                "audio_path_example": "audio/9/ないまでも_example.mp3"
+            },
+            {
+                "word": "まみれ",
+                "explain": "何かがたくさん付いている状態。",
+                "example": "子供たちは泥まみれになって遊んでいた。",
+                "audio_path_explain": "audio/9/まみれ_explain.mp3",
+                "audio_path_example": "audio/9/まみれ_example.mp3"
+            },
+            {
+                "word": "沈む（しずむ）",
+                "explain": "水中に入っていく、または落ち込む。",
+                "example": "悲しみの海に沈んだ私、目を開けるのも億劫。",
+                "audio_path_explain": "audio/9/沈む_explain.mp3",
+                "audio_path_example": "audio/9/沈む_example.mp3"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "data": [
+            {
+                "word": "育む（はぐくむ）",
+                "explain": "大切にして育てる、養育する。",
+                "example": "人材を育む。",
+                "audio_path_explain": "audio/10/育む_explain.mp3",
+                "audio_path_example": "audio/10/育む_example.mp3"
+            },
+            {
+                "word": "釘（くぎ）",
+                "explain": "木材や金属を固定するための細長い金属。",
+                "example": "あのお寺、釘は一切使わないんだって。",
+                "audio_path_explain": "audio/10/釘_explain.mp3",
+                "audio_path_example": "audio/10/釘_example.mp3"
+            },
+            {
+                "word": "傾ける（かたむける）",
+                "explain": "斜めにする、または集中する。",
+                "example": "彼は耳を傾けて話を聞いた。",
+                "audio_path_explain": "audio/10/傾ける_explain.mp3",
+                "audio_path_example": "audio/10/傾ける_example.mp3"
+            },
+            {
+                "word": "取り掛かる（とりかかる）",
+                "explain": "何かを始める、取り組む。（着手。动手。）",
+                "example": "新しいプロジェクトに取り掛かる。",
+                "audio_path_explain": "audio/10/取り掛かる_explain.mp3",
+                "audio_path_example": "audio/10/取り掛かる_example.mp3"
+            },
+            {
+                "word": "サイクル",
+                "explain": "循環、周期、繰り返し。",
+                "example": "四季のサイクルは自然界に大きな影響を与える。",
+                "audio_path_explain": "audio/10/サイクル_explain.mp3",
+                "audio_path_example": "audio/10/サイクル_example.mp3"
+            },
+            {
+                "word": "とりわけ",
+                "explain": "特に、特別に、中でも。",
+                "example": "蓮華ちゃんのセーラー服はとりわけ可愛い。",
+                "audio_path_explain": "audio/10/とりわけ_explain.mp3",
+                "audio_path_example": "audio/10/とりわけ_example.mp3"
+            },
+            {
+                "word": "切らす（きらす）",
+                "explain": "物が無くなる、あるいは供給が途絶えること。",
+                "example": "課金ゲームのせいで、\nムラサメちゃんは小遣銭を切らしている。",
+                "audio_path_explain": "audio/10/切らす_explain.mp3",
+                "audio_path_example": "audio/10/切らす_example.mp3"
+            },
+            {
+                "word": "乗り気（のりき）",
+                "explain": "何かに興味を持ち、積極的に取り組む気持ち。",
+                "example": "私は芳乃ちゃんの裸足に乗り気だ。",
+                "audio_path_explain": "audio/10/乗り気_explain.mp3",
+                "audio_path_example": "audio/10/乗り気_example.mp3"
+            },
+            {
+                "word": "からには",
+                "explain": "何かをするからには、\nそれに伴う当然の結果や責任がある。",
+                "example": "蓮華ちゃんとやるからには\n最後までやり抜くつもりだ。",
+                "audio_path_explain": "audio/10/からには_explain.mp3",
+                "audio_path_example": "audio/10/からには_example.mp3"
+            },
+            {
+                "word": "かとおもえば",
+                "explain": "何かが起こった直後に別のことが起こる様子。",
+                "example": "雨が降ったかと思えば、すぐに晴れた。",
+                "audio_path_explain": "audio/10/かとおもえば_explain.mp3",
+                "audio_path_example": "audio/10/かとおもえば_example.mp3"
+            },
+            {
+                "word": "ながらに（して）",
+                "explain": "その状態のままで。",
+                "example": "インターネットのおかげで、\n居ながらにして情報を得ることができる。",
+                "audio_path_explain": "audio/10/ながらに_explain.mp3",
+                "audio_path_example": "audio/10/ながらに_example.mp3"
+            },
+            {
+                "word": "そのもの",
+                "explain": "名詞と接続、本質や特質を強調する。",
+                "example": "蓮華ちゃんは美しさそのものだ。",
+                "audio_path_explain": "audio/10/そのもの_explain.mp3",
+                "audio_path_example": "audio/10/そのもの_example.mp3"
+            },
+            {
+                "word": "極まる、極まりない",
+                "explain": "物事の極致に達すること、非常に。",
+                "example": "彼の無礼さは極まりない。",
+                "audio_path_explain": "audio/10/極まる、極まりない_explain.mp3",
+                "audio_path_example": "audio/10/極まる、極まりない_example.mp3"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "data": [
+            {
+                "word": "模索（もさく）",
+                "explain": "解決策を探す。",
+                "example": "科学者はロリになれる方法を模索している",
+                "audio_path_explain": "audio/11/模索_explain.mp3",
+                "audio_path_example": "audio/11/模索_example.mp3"
+            },
+            {
+                "word": "還元（かんげん）",
+                "explain": "元の状態に戻すこと、\n利益や価値を再び分配すること。",
+                "example": "企業は利益の一部を還元して、顧客にポイントとして提供する。",
+                "audio_path_explain": "audio/11/還元_explain.mp3",
+                "audio_path_example": "audio/11/還元_example.mp3"
+            },
+            {
+                "word": "疎通（そつう）",
+                "explain": "意思や気持ちが通じ合うこと。",
+                "example": "言葉が通じなくても、\nジェスチャーで疎通できる。",
+                "audio_path_explain": "audio/11/疎通_explain.mp3",
+                "audio_path_example": "audio/11/疎通_example.mp3"
+            },
+            {
+                "word": "培う（つちかう）",
+                "explain": "努力して身につける、育てる。",
+                "example": "人間関係を培うことが大切だ。",
+                "audio_path_explain": "audio/11/培う_explain.mp3",
+                "audio_path_example": "audio/11/培う_example.mp3"
+            },
+            {
+                "word": "ルーズ",
+                "explain": "だらしない、時間や物事に対して緩慢なこと。",
+                "example": "彼は時間にルーズな人だ。",
+                "audio_path_explain": "audio/11/ルーズ_explain.mp3",
+                "audio_path_example": "audio/11/ルーズ_example.mp3"
+            },
+            {
+                "word": "見合わせる（みあわせる）",
+                "explain": "何かを中止する、または延期する。",
+                "example": "悪天候のため、イベントを見合わせることにした。",
+                "audio_path_explain": "audio/11/見合わせる_explain.mp3",
+                "audio_path_example": "audio/11/見合わせる_example.mp3"
+            },
+            {
+                "word": "ちんぷんかんぷん",
+                "explain": "理解不能、意味不明。",
+                "example": "ｎ１の聴力はちんぷんかんぷだ。",
+                "audio_path_explain": "audio/11/ちんぷんかんぷん_explain.mp3",
+                "audio_path_example": "audio/11/ちんぷんかんぷん_example.mp3"
+            },
+            {
+                "word": "につけ",
+                "explain": "何かにつけて、何かに関連して。（每当…就…）",
+                "example": "試験のことにつけて、彼はいつも緊張している。",
+                "audio_path_explain": "audio/11/につけ_explain.mp3",
+                "audio_path_example": "audio/11/につけ_example.mp3"
+            },
+            {
+                "word": "なり",
+                "explain": "〜するとすぐに、〜したとたんに。",
+                "example": "私は家に帰るなり、仙狐さんをもふもふする。",
+                "audio_path_explain": "audio/11/なり_explain.mp3",
+                "audio_path_example": "audio/11/なり_example.mp3"
+            },
+            {
+                "word": "までのことだ",
+                "explain": "それ以上のことはしない、単に〜するだけ。（只是…罢了）",
+                "example": "死んだら、生まれ変わるまでのことだ。",
+                "audio_path_explain": "audio/11/までのことだ_explain.mp3",
+                "audio_path_example": "audio/11/までのことだ_example.mp3"
+            },
+            {
+                "word": "がたい",
+                "explain": "〜するのが難しい、〜しにくい。",
+                "example": "彼の話は信じがたい内容だった。",
+                "audio_path_explain": "audio/11/がたい_explain.mp3",
+                "audio_path_example": "audio/11/がたい_example.mp3"
+            },
+            {
+                "word": "かねる",
+                "explain": "〜することができない。",
+                "example": "彼の提案には賛成しかねる。",
+                "audio_path_explain": "audio/11/かねる_explain.mp3",
+                "audio_path_example": "audio/11/かねる_example.mp3"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "data": [
+            {
+                "word": "べく",
+                "explain": "〜するために、〜する目的で。",
+                "example": "ｎ１試験を合格べく、この動画を見っている。",
+                "audio_path_explain": "audio/12/べく_explain.mp3",
+                "audio_path_example": "audio/12/べく_example.mp3"
+            },
+            {
+                "word": "ことのないよう",
+                "explain": "〜しないように。",
+                "example": "同じミスを繰り返すことのないよう、注意しよう。",
+                "audio_path_explain": "audio/12/ことのないよう_explain.mp3",
+                "audio_path_example": "audio/12/ことのないよう_example.mp3"
+            },
+            {
+                "word": "ようでは",
+                "explain": "ならば。（如果...的话、后面伴随着与期望相反的事物或“困る、だめだ”等负面评价的表达方式。）",
+                "example": "蓮華ちゃんと結婚しないようでは困る。",
+                "audio_path_explain": "audio/12/ようでは_explain.mp3",
+                "audio_path_example": "audio/12/ようでは_example.mp3"
+            },
+            {
+                "word": "に至るまで",
+                "explain": "〜に達するまで、〜に至る範囲まで。",
+                "example": "蓮華ちゃんの魅力は外見だけでなく、性格に至るまで完璧だ。",
+                "audio_path_explain": "audio/12/に至るまで_explain.mp3",
+                "audio_path_example": "audio/12/に至るまで_example.mp3"
+            },
+            {
+                "word": "に即して",
+                "explain": "〜に基づいて、〜に従って。",
+                "example": "現実に即して考えると、蓮華ちゃんとセックスは犯罪だ。",
+                "audio_path_explain": "audio/12/に即して_explain.mp3",
+                "audio_path_example": "audio/12/に即して_example.mp3"
+            },
+            {
+                "word": "に則って（にのっとって）",
+                "explain": "〜に従って、〜に基づいて。",
+                "example": "古式に則って芳乃ちゃんは私の筆下ろし（ふでおろし）をもらった。",
+                "audio_path_explain": "audio/12/に則って_explain.mp3",
+                "audio_path_example": "audio/12/に則って_example.mp3"
+            },
+            {
+                "word": "に準じる",
+                "explain": "〜に基づいて対応する、〜に倣う。（按照……对待）",
+                "example": "私は可愛い女の子に、嫁に準じる待遇（たいぐう）を与える",
+                "audio_path_explain": "audio/12/に準じる_explain.mp3",
+                "audio_path_example": "audio/12/に準じる_example.mp3"
+            },
+            {
+                "word": "にも増して",
+                "explain": "〜以上に、〜よりさらに。（比，，更加）",
+                "example": "ムラサメちゃんの胸は誰にも増して小さい。",
+                "audio_path_explain": "audio/12/にも増して_explain.mp3",
+                "audio_path_example": "audio/12/にも増して_example.mp3"
+            },
+            {
+                "word": "に至っては",
+                "explain": "〜に関しては、〜に至ると。（既然事已至此）",
+                "example": "蓮華ちゃんに妊娠するに至っては、彼女と結婚しかありません。",
+                "audio_path_explain": "audio/12/に至っては_explain.mp3",
+                "audio_path_example": "audio/12/に至っては_example.mp3"
+            },
+            {
+                "word": "はおろか",
+                "explain": "〜はもちろん、〜は言うまでもなく。",
+                "example": "彼は日本語はおろか、英語もペラペラだ。",
+                "audio_path_explain": "audio/12/はおろか_explain.mp3",
+                "audio_path_example": "audio/12/はおろか_example.mp3"
+            },
+            {
+                "word": "によるところが大きい",
+                "explain": "〜に大きく依存している、〜のおかげである。（主要依赖于）",
+                "example": "万華鏡の成功は、蓮華ちゃんによるところが大きい。",
+                "audio_path_explain": "audio/12/によるところが大きい_explain.mp3",
+                "audio_path_example": "audio/12/によるところが大きい_example.mp3"
+            }
+        ]
+    }
+]

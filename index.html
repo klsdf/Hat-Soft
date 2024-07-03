@@ -107,13 +107,14 @@
         <li class="main-banner-item" component="collider"><a href="./component_talk/index.html">聊天区</a> </li>
         <li class="main-banner-item" component="collider"><a href="./component_gameAsserts/index.html">游戏素材资源整理</a></li>
         <li class="main-banner-item" component="collider"><a href="">帽子社游戏合集（准备中）</a></li>
+        <li class="main-banner-item" component="collider"><a href="./component_nihongStudy/index.html">日语小测验捏~~~</a></li>
 
 
         <!-- <li class="main-banner-item"><a href="./component_Yingxue/index.html">萤雪网页助手</a> </li> -->
 
     </ul>
 
-    <div class="collider" component="player collider" id="player">板子</div>
+    <div class="collider" component="player collider" id="player" onclick="gameHelp()">板子</div>
 
 
 </body>
@@ -126,6 +127,12 @@
         duration: 10000,
         autoplay: false,
     });
+
+
+    function gameHelp()
+    {
+        alert("使用方向键来控制板子移动！使用空格键发射子弹！")
+    }
 
     $("#main-title").click(function () {
         $(".main-banner-item").show();
