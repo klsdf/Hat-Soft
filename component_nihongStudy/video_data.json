@@ -1,31 +1,1228 @@
 [
     {
         "id": 1,
-        "data": []
+        "data": [
+            {
+                "word": "愛想",
+                "explain": "人と接する態度や行動の良さ。",
+                "example": "彼女は誰にでも愛想がよい。",
+                "audio_path_explain": "audio/1/愛想_explain.mp3",
+                "audio_path_example": "audio/1/愛想_example.mp3"
+            },
+            {
+                "word": "間柄（あいだがら）",
+                "explain": "人と人との関係。",
+                "example": "親子の間柄。",
+                "audio_path_explain": "audio/1/間柄_explain.mp3",
+                "audio_path_example": "audio/1/間柄_example.mp3"
+            },
+            {
+                "word": "相次ぐ",
+                "explain": "次々と続く。（相继发生，连续不断。）",
+                "example": "この数日火災が相次いだ。",
+                "audio_path_explain": "audio/1/相次ぐ_explain.mp3",
+                "audio_path_example": "audio/1/相次ぐ_example.mp3"
+            },
+            {
+                "word": "合間（あいま）",
+                "explain": "仕事や活動の途中の短い休息時間。（空闲时间）",
+                "example": "仕事の合間に一服する。",
+                "audio_path_explain": "audio/1/合間_explain.mp3",
+                "audio_path_example": "audio/1/合間_example.mp3"
+            },
+            {
+                "word": "仰ぐ（あおぐ）",
+                "explain": "尊敬して頼りにする。",
+                "example": "彼らは彼をリーダーとして仰ぐ。",
+                "audio_path_explain": "audio/1/仰ぐ_explain.mp3",
+                "audio_path_example": "audio/1/仰ぐ_example.mp3"
+            },
+            {
+                "word": "垢（あか）",
+                "explain": "皮膚の汚れ。（污垢）",
+                "example": "爪の垢ほど。",
+                "audio_path_explain": "audio/1/垢_explain.mp3",
+                "audio_path_example": "audio/1/垢_example.mp3"
+            },
+            {
+                "word": "証（あかし）",
+                "explain": "証拠。",
+                "example": "身の証を立てる。",
+                "audio_path_explain": "audio/1/証_explain.mp3",
+                "audio_path_example": "audio/1/証_example.mp3"
+            },
+            {
+                "word": "明かす",
+                "explain": "秘密などを公開する。",
+                "example": "手品の種を明かす。",
+                "audio_path_explain": "audio/1/明かす_explain.mp3",
+                "audio_path_example": "audio/1/明かす_example.mp3"
+            },
+            {
+                "word": "顎",
+                "explain": "顔の下部の前に突出した部分。",
+                "example": "人をあごでこき使う",
+                "audio_path_explain": "audio/1/顎_explain.mp3",
+                "audio_path_example": "audio/1/顎_example.mp3"
+            },
+            {
+                "word": "浅ましい",
+                "explain": "卑しい。",
+                "example": "人の物に手を出すとは浅ましい。",
+                "audio_path_explain": "audio/1/浅ましい_explain.mp3",
+                "audio_path_example": "audio/1/浅ましい_example.mp3"
+            },
+            {
+                "word": "欺く（あざむく）",
+                "explain": "騙す。",
+                "example": "人を欺いて金をとる。",
+                "audio_path_explain": "audio/1/欺く_explain.mp3",
+                "audio_path_example": "audio/1/欺く_example.mp3"
+            },
+            {
+                "word": "嘲笑う",
+                "explain": "軽蔑して笑う。",
+                "example": "彼は鼻先であざわらった。",
+                "audio_path_explain": "audio/1/嘲笑う_explain.mp3",
+                "audio_path_example": "audio/1/嘲笑う_example.mp3"
+            },
+            {
+                "word": "悪しからず（あしからず）",
+                "explain": "悪く思わないで。",
+                "example": "どうか悪しからず。",
+                "audio_path_explain": "audio/1/悪しからず_explain.mp3",
+                "audio_path_example": "audio/1/悪しからず_example.mp3"
+            },
+            {
+                "word": "焦る",
+                "explain": "急いで不安になる。",
+                "example": "焦らずに機会を待つ。",
+                "audio_path_explain": "audio/1/焦る_explain.mp3",
+                "audio_path_example": "audio/1/焦る_example.mp3"
+            },
+            {
+                "word": "値する（あたいする）",
+                "explain": "価値がある。",
+                "example": "千円にあたいする。",
+                "audio_path_explain": "audio/1/値する_explain.mp3",
+                "audio_path_example": "audio/1/値する_example.mp3"
+            },
+            {
+                "word": "扱い（あつかい）",
+                "explain": "取り扱い。（对待。待遇。）",
+                "example": "このホテルは客の扱いが悪い。",
+                "audio_path_explain": "audio/1/扱い_explain.mp3",
+                "audio_path_example": "audio/1/扱い_example.mp3"
+            },
+            {
+                "word": "呆気ない（あっけない）",
+                "explain": "意外につまらない。",
+                "example": "呆気ない幕切れだった。",
+                "audio_path_explain": "audio/1/呆気ない_explain.mp3",
+                "audio_path_example": "audio/1/呆気ない_example.mp3"
+            },
+            {
+                "word": "斡旋（あっせん）",
+                "explain": "間に入って取り持つこと。",
+                "example": "友人の斡旋で可愛い蓮華ちゃんと会見した。",
+                "audio_path_explain": "audio/1/斡旋_explain.mp3",
+                "audio_path_example": "audio/1/斡旋_example.mp3"
+            },
+            {
+                "word": "圧迫（あっぱく）",
+                "explain": "強い力で押さえつけること。",
+                "example": "言論を圧迫する。",
+                "audio_path_explain": "audio/1/圧迫_explain.mp3",
+                "audio_path_example": "audio/1/圧迫_example.mp3"
+            },
+            {
+                "word": "誂える（あつらえる）",
+                "explain": "注文して作らせる。",
+                "example": "背広を１着誂える。",
+                "audio_path_explain": "audio/1/誂える_explain.mp3",
+                "audio_path_example": "audio/1/誂える_example.mp3"
+            },
+            {
+                "word": "跡継ぎ（あとつぎ）",
+                "explain": "家業や地位を継ぐ人。（后任，继承，接班人，后嗣。）",
+                "example": "師匠の跡継ぎが決まった。",
+                "audio_path_explain": "audio/1/跡継ぎ_explain.mp3",
+                "audio_path_example": "audio/1/跡継ぎ_example.mp3"
+            },
+            {
+                "word": "後回し（あとまわし）",
+                "explain": "後にすること。",
+                "example": "厄介なことは後回しにしよう。",
+                "audio_path_explain": "audio/1/後回し_explain.mp3",
+                "audio_path_example": "audio/1/後回し_example.mp3"
+            },
+            {
+                "word": "あべこべ(な)",
+                "explain": "逆さま。（顺序、位置、关系等）反，相反，颠倒。",
+                "example": "ほめられるつもりがあべこべに叱られた。",
+                "audio_path_explain": "audio/1/あべこべ(な)_explain.mp3",
+                "audio_path_example": "audio/1/あべこべ(な)_example.mp3"
+            },
+            {
+                "word": "雨具（あまぐ）",
+                "explain": "雨を防ぐための道具。",
+                "example": "雨具を携行する。",
+                "audio_path_explain": "audio/1/雨具_explain.mp3",
+                "audio_path_example": "audio/1/雨具_example.mp3"
+            },
+            {
+                "word": "アマチュア",
+                "explain": "職業でない趣味で行う人。（业余爱好者，外行。）",
+                "example": "アマチュアカメラマン。",
+                "audio_path_explain": "audio/1/アマチュア_explain.mp3",
+                "audio_path_example": "audio/1/アマチュア_example.mp3"
+            },
+            {
+                "word": "網（あみ）",
+                "explain": "糸や針金などを編んだもの。",
+                "example": "法の網を潜る。",
+                "audio_path_explain": "audio/1/網_explain.mp3",
+                "audio_path_example": "audio/1/網_example.mp3"
+            },
+            {
+                "word": "操る（あやつる）",
+                "explain": "上手に使う。（操，掌握。）",
+                "example": "英語を自由に操る。",
+                "audio_path_explain": "audio/1/操る_explain.mp3",
+                "audio_path_example": "audio/1/操る_example.mp3"
+            },
+            {
+                "word": "あやふや(な)",
+                "explain": "はっきりしない。（含糊。）",
+                "example": "あやふやな返事をする。",
+                "audio_path_explain": "audio/1/あやふや(な)_explain.mp3",
+                "audio_path_example": "audio/1/あやふや(な)_example.mp3"
+            }
+        ]
     },
     {
         "id": 2,
-        "data": []
+        "data": [
+            {
+                "word": "歩み（あゆみ）",
+                "explain": "脚步，步伐",
+                "example": "歩みがはやい。",
+                "audio_path_explain": "audio/2/歩み_explain.mp3",
+                "audio_path_example": "audio/2/歩み_example.mp3"
+            },
+            {
+                "word": "歩む（あゆむ）",
+                "explain": "前进，进展，经历过。",
+                "example": "いばらの道を歩む。",
+                "audio_path_explain": "audio/2/歩む_explain.mp3",
+                "audio_path_example": "audio/2/歩む_example.mp3"
+            },
+            {
+                "word": "荒らす（あらす）",
+                "explain": "使荒芜；骚扰；抢劫。",
+                "example": "暴風雨が庭を荒らす。",
+                "audio_path_explain": "audio/2/荒らす_explain.mp3",
+                "audio_path_example": "audio/2/荒らす_example.mp3"
+            },
+            {
+                "word": "争い（あらそい）",
+                "explain": "争，争论",
+                "example": "党内の派閥争いが激化した。",
+                "audio_path_explain": "audio/2/争い_explain.mp3",
+                "audio_path_example": "audio/2/争い_example.mp3"
+            },
+            {
+                "word": "改まる（あらたまる）",
+                "explain": "改善。革新。",
+                "example": "今年から規則が改まった",
+                "audio_path_explain": "audio/2/改まる_explain.mp3",
+                "audio_path_example": "audio/2/改まる_example.mp3"
+            },
+            {
+                "word": "荒っぽい（あらっぽい）",
+                "explain": "粗暴的，粗野的，粗糙的。",
+                "example": "荒っぽい荷扱い。",
+                "audio_path_explain": "audio/2/荒っぽい_explain.mp3",
+                "audio_path_example": "audio/2/荒っぽい_example.mp3"
+            },
+            {
+                "word": "有様",
+                "explain": "样子，光景，情况，存在状态。事物的状态。",
+                "example": "いまの有様では合格は難しい。",
+                "audio_path_explain": "audio/2/有様_explain.mp3",
+                "audio_path_example": "audio/2/有様_example.mp3"
+            },
+            {
+                "word": "有りのまま",
+                "explain": "据实的，如实的。",
+                "example": "有りのままに事実を述べなさい。",
+                "audio_path_explain": "audio/2/有りのまま_explain.mp3",
+                "audio_path_example": "audio/2/有りのまま_example.mp3"
+            },
+            {
+                "word": "有り触れる",
+                "explain": "常见，常有，不稀奇。",
+                "example": "極ありふれた品で珍しくもなんともない。",
+                "audio_path_explain": "audio/2/有り触れる_explain.mp3",
+                "audio_path_example": "audio/2/有り触れる_example.mp3"
+            },
+            {
+                "word": "アルカリ",
+                "explain": "alkali；碱，强碱。",
+                "example": "中和とは、**「酸性の水溶液とアルカリ性の水溶液が混ざることによって、水と塩（えん）ができる化学反応」**です。",
+                "audio_path_explain": "audio/2/アルカリ_explain.mp3",
+                "audio_path_example": "audio/2/アルカリ_example.mp3"
+            },
+            {
+                "word": "アンケート",
+                "explain": "enquête；通讯调查；征询意见。",
+                "example": "会員からアンケートをとる。",
+                "audio_path_explain": "audio/2/アンケート_explain.mp3",
+                "audio_path_example": "audio/2/アンケート_example.mp3"
+            },
+            {
+                "word": "アンコール",
+                "explain": "encore；安可，（要求）重演，再演奏。",
+                "example": "ミクちゃんは3回もアンコールされた。",
+                "audio_path_explain": "audio/2/アンコール_explain.mp3",
+                "audio_path_example": "audio/2/アンコール_example.mp3"
+            },
+            {
+                "word": "暗算（あんざん）",
+                "explain": "心算",
+                "example": "優香ままはいつも暗算で計算する。",
+                "audio_path_explain": "audio/2/暗算_explain.mp3",
+                "audio_path_example": "audio/2/暗算_example.mp3"
+            },
+            {
+                "word": "安静（あんせい）",
+                "explain": "静养；静躺。静卧。",
+                "example": "医者は絶対安静を命じた。",
+                "audio_path_explain": "audio/2/安静_explain.mp3",
+                "audio_path_example": "audio/2/安静_example.mp3"
+            },
+            {
+                "word": "案の定（あんのじょう）",
+                "explain": "果然，果如所料。",
+                "example": "やはり案の定そうだった。",
+                "audio_path_explain": "audio/2/案の定_explain.mp3",
+                "audio_path_example": "audio/2/案の定_example.mp3"
+            },
+            {
+                "word": "家出",
+                "explain": "逃出家门。离家出走。",
+                "example": "娘が家出をした。",
+                "audio_path_explain": "audio/2/家出_explain.mp3",
+                "audio_path_example": "audio/2/家出_example.mp3"
+            },
+            {
+                "word": "いかに（如何，怎么样；）",
+                "explain": "",
+                "example": "いかにすればいいですか。",
+                "audio_path_explain": "audio/2/いかに_explain.mp3",
+                "audio_path_example": "audio/2/いかに_example.mp3"
+            },
+            {
+                "word": "いかにも（实在，真(的)。）",
+                "explain": "",
+                "example": "蓮華ちゃんはいかにもきれいだ。",
+                "audio_path_explain": "audio/2/いかにも_explain.mp3",
+                "audio_path_example": "audio/2/いかにも_example.mp3"
+            },
+            {
+                "word": "粋（いき 漂亮，俊俏。）",
+                "explain": "",
+                "example": "蓮華ちゃんは粋な美少女です。",
+                "audio_path_explain": "audio/2/粋_explain.mp3",
+                "audio_path_example": "audio/2/粋_example.mp3"
+            },
+            {
+                "word": "生き甲斐（いきがい 生存的意义，生活的价值。）",
+                "explain": "",
+                "example": "毎日の生活に何の生き甲斐もない。",
+                "audio_path_explain": "audio/2/生き甲斐_explain.mp3",
+                "audio_path_example": "audio/2/生き甲斐_example.mp3"
+            },
+            {
+                "word": "育成（いくせい 培养，培育。）",
+                "explain": "",
+                "example": "後継者を育成する。",
+                "audio_path_explain": "audio/2/育成_explain.mp3",
+                "audio_path_example": "audio/2/育成_example.mp3"
+            },
+            {
+                "word": "幾多（いくた 许多，无数。）",
+                "explain": "",
+                "example": "幾多の先人の努力。",
+                "audio_path_explain": "audio/2/幾多_explain.mp3",
+                "audio_path_example": "audio/2/幾多_example.mp3"
+            },
+            {
+                "word": "移行（いこう 过渡。转移。）",
+                "explain": "",
+                "example": "共産主義への移行。",
+                "audio_path_explain": "audio/2/移行_explain.mp3",
+                "audio_path_example": "audio/2/移行_example.mp3"
+            },
+            {
+                "word": "依存（いそん 依赖。依靠。）",
+                "explain": "",
+                "example": "外国からの輸入に依存する。",
+                "audio_path_explain": "audio/2/依存_explain.mp3",
+                "audio_path_example": "audio/2/依存_example.mp3"
+            },
+            {
+                "word": "委託（いたく 委托。信托。）",
+                "explain": "",
+                "example": "商品をこの店舗に委託販売している。",
+                "audio_path_explain": "audio/2/委託_explain.mp3",
+                "audio_path_example": "audio/2/委託_example.mp3"
+            },
+            {
+                "word": "頂（いただき）",
+                "explain": "顶。",
+                "example": "理塘の頂に来ました",
+                "audio_path_explain": "audio/2/頂_explain.mp3",
+                "audio_path_example": "audio/2/頂_example.mp3"
+            },
+            {
+                "word": "炒める（いためる）",
+                "explain": "炒。",
+                "example": "キャベツを炒める。",
+                "audio_path_explain": "audio/2/炒める_explain.mp3",
+                "audio_path_example": "audio/2/炒める_example.mp3"
+            },
+            {
+                "word": "傷める（いためる）",
+                "explain": "弄坏。损坏。",
+                "example": "ひっこしで家具を傷めてしまった。",
+                "audio_path_explain": "audio/2/傷める_explain.mp3",
+                "audio_path_example": "audio/2/傷める_example.mp3"
+            },
+            {
+                "word": "労る（いたわる 体贴。爱护。）",
+                "explain": "",
+                "example": "年寄を労る。",
+                "audio_path_explain": "audio/2/労る_explain.mp3",
+                "audio_path_example": "audio/2/労る_example.mp3"
+            }
+        ]
     },
     {
         "id": 3,
-        "data": []
+        "data": [
+            {
+                "word": "蓄える(たくわえる)",
+                "explain": "金銭・物品などを将来のために集めておく。",
+                "example": "お金を蓄える。",
+                "audio_path_explain": "audio/3/蓄える(たくわえる)_explain.mp3",
+                "audio_path_example": "audio/3/蓄える(たくわえる)_example.mp3"
+            },
+            {
+                "word": "多岐(たき)",
+                "explain": "物事が多方面にかかわりをもつ。",
+                "example": "問題が多岐にわたる。",
+                "audio_path_explain": "audio/3/多岐(たき)_explain.mp3",
+                "audio_path_example": "audio/3/多岐(たき)_example.mp3"
+            },
+            {
+                "word": "ぐらぐら",
+                "explain": "揺れ動いて安定しないさま。",
+                "example": "地震で家がぐらぐら揺れる。",
+                "audio_path_explain": "audio/3/ぐらぐら_explain.mp3",
+                "audio_path_example": "audio/3/ぐらぐら_example.mp3"
+            },
+            {
+                "word": "持て成す(もてなす)",
+                "explain": "歓待する。ご馳走する。",
+                "example": "客を持て成す。",
+                "audio_path_explain": "audio/3/持て成す(もてなす)_explain.mp3",
+                "audio_path_example": "audio/3/持て成す(もてなす)_example.mp3"
+            },
+            {
+                "word": "んじゃなかった",
+                "explain": "行った事への後悔を述べる表現。",
+                "example": "三次元の女に対して感情を抱くんじゃなかった。",
+                "audio_path_explain": "audio/3/んじゃなかった_explain.mp3",
+                "audio_path_example": "audio/3/んじゃなかった_example.mp3"
+            },
+            {
+                "word": "に越したことはない",
+                "explain": "それが最も良い、といった意味。",
+                "example": "蓮華ちゃんと結婚することに越したことはない。",
+                "audio_path_explain": "audio/3/に越したことはない_explain.mp3",
+                "audio_path_example": "audio/3/に越したことはない_example.mp3"
+            },
+            {
+                "word": "絡む(からむ)",
+                "explain": "関係する、関わる。",
+                "example": "この問題には多くの人々が絡んでいる。",
+                "audio_path_explain": "audio/3/絡む(からむ)_explain.mp3",
+                "audio_path_example": "audio/3/絡む(からむ)_example.mp3"
+            },
+            {
+                "word": "をいいことに",
+                "explain": "チャンスを利用する。（趁着）",
+                "example": "先生がいないのをいいことに、学生たちは授業をサボった。",
+                "audio_path_explain": "audio/3/をいいことに_explain.mp3",
+                "audio_path_example": "audio/3/をいいことに_example.mp3"
+            },
+            {
+                "word": "思い込む(おもいこむ)",
+                "explain": "強く決意する。（下定决心）",
+                "example": "いったん思い込んだら梃子（てこ）でも動かない。",
+                "audio_path_explain": "audio/3/思い込む(おもいこむ)_explain.mp3",
+                "audio_path_example": "audio/3/思い込む(おもいこむ)_example.mp3"
+            },
+            {
+                "word": "たことにする",
+                "explain": "たつもりだ（就當作）",
+                "example": "今の話は聞かなかったことにしよう",
+                "audio_path_explain": "audio/3/たことにする_explain.mp3",
+                "audio_path_example": "audio/3/たことにする_example.mp3"
+            },
+            {
+                "word": "ないものか",
+                "explain": "願望や希望を表現する。",
+                "example": "多くの美少女と結婚できないものか。",
+                "audio_path_explain": "audio/3/ないものか_explain.mp3",
+                "audio_path_example": "audio/3/ないものか_example.mp3"
+            },
+            {
+                "word": "限りだ",
+                "explain": "非常に強い感情を表現する",
+                "example": "ハーレムを作るとは、嬉しい限りだ！",
+                "audio_path_explain": "audio/3/限りだ_explain.mp3",
+                "audio_path_example": "audio/3/限りだ_example.mp3"
+            },
+            {
+                "word": "養う(やしなう)",
+                "explain": "食物などを与えて育てる，または生活させる。",
+                "example": "シルヴィを養う。",
+                "audio_path_explain": "audio/3/養う(やしなう)_explain.mp3",
+                "audio_path_example": "audio/3/養う(やしなう)_example.mp3"
+            },
+            {
+                "word": "怠る(おこたる)",
+                "explain": "怠ける、サボると同じ。",
+                "example": "怠らずに勉強する。",
+                "audio_path_explain": "audio/3/怠る(おこたる)_explain.mp3",
+                "audio_path_example": "audio/3/怠る(おこたる)_example.mp3"
+            },
+            {
+                "word": "逸脱(いつだつ)",
+                "explain": "基準や規範から外れること",
+                "example": "彼の行動は社会の規範を逸脱している。",
+                "audio_path_explain": "audio/3/逸脱(いつだつ)_explain.mp3",
+                "audio_path_example": "audio/3/逸脱(いつだつ)_example.mp3"
+            },
+            {
+                "word": "まちまち",
+                "explain": "様々（各式各样）",
+                "example": "彼らの意見はまちまちだった。",
+                "audio_path_explain": "audio/3/まちまち_explain.mp3",
+                "audio_path_example": "audio/3/まちまち_example.mp3"
+            },
+            {
+                "word": "張り合う(はりあう)",
+                "explain": "競争や対抗の意味です",
+                "example": "試合で彼は相手に張り合った。",
+                "audio_path_explain": "audio/3/張り合う(はりあう)_explain.mp3",
+                "audio_path_example": "audio/3/張り合う(はりあう)_example.mp3"
+            },
+            {
+                "word": "待ち遠しい(まちどおしい)",
+                "explain": "待っている間にとても楽しみである",
+                "example": "夏休みが待ち遠しい。",
+                "audio_path_explain": "audio/3/待ち遠しい(まちどおしい)_explain.mp3",
+                "audio_path_example": "audio/3/待ち遠しい(まちどおしい)_example.mp3"
+            },
+            {
+                "word": "しくじる",
+                "explain": "失敗する",
+                "example": "試験にしくじってしまったので、大学に入れなかった。",
+                "audio_path_explain": "audio/3/しくじる_explain.mp3",
+                "audio_path_example": "audio/3/しくじる_example.mp3"
+            },
+            {
+                "word": "割に",
+                "explain": "けれどと同じ。（虽然、但是）",
+                "example": "彼の給料は高いわりに、満足していないようだ。",
+                "audio_path_explain": "audio/3/割に_explain.mp3",
+                "audio_path_example": "audio/3/割に_example.mp3"
+            },
+            {
+                "word": "だけましだ",
+                "explain": "幸いと同じ。（幸好，万幸）",
+                "example": "事故が起きたが、怪我がなかっただけましだ",
+                "audio_path_explain": "audio/3/だけましだ_explain.mp3",
+                "audio_path_example": "audio/3/だけましだ_example.mp3"
+            },
+            {
+                "word": "たところで",
+                "explain": "どんなに努力しても、結果は同じであること。",
+                "example": "彼はどれだけ勉強したところで、結局試験には落ちてしまった。",
+                "audio_path_explain": "audio/3/たところで_explain.mp3",
+                "audio_path_example": "audio/3/たところで_example.mp3"
+            }
+        ]
     },
     {
         "id": 4,
-        "data": []
+        "data": [
+            {
+                "word": "市(いち)",
+                "explain": "集市，常用语，门庭若市",
+                "example": "門前市をなす。",
+                "audio_path_explain": "audio/4/市(いち)_explain.mp3",
+                "audio_path_example": "audio/4/市(いち)_example.mp3"
+            },
+            {
+                "word": "一概に(いちがいに)",
+                "explain": "一概，笼统地",
+                "example": "一概には言えない。",
+                "audio_path_explain": "audio/4/一概に(いちがいに)_explain.mp3",
+                "audio_path_example": "audio/4/一概に(いちがいに)_example.mp3"
+            },
+            {
+                "word": "著しい(いちじるしい)",
+                "explain": "明显的，显著的。",
+                "example": "進歩が著しい。",
+                "audio_path_explain": "audio/4/著しい(いちじるしい)_explain.mp3",
+                "audio_path_example": "audio/4/著しい(いちじるしい)_example.mp3"
+            },
+            {
+                "word": "一面(いちめん)",
+                "explain": "",
+                "example": "外は一面の雪だ。",
+                "audio_path_explain": "audio/4/一面(いちめん)_explain.mp3",
+                "audio_path_example": "audio/4/一面(いちめん)_example.mp3"
+            },
+            {
+                "word": "一括(いっかつ)",
+                "explain": "一包在内，总括起来，一揽子。",
+                "example": "法案を一括して議会に上程する。",
+                "audio_path_explain": "audio/4/一括(いっかつ)_explain.mp3",
+                "audio_path_example": "audio/4/一括(いっかつ)_example.mp3"
+            },
+            {
+                "word": "一変(いっぺん)",
+                "explain": "完全改变",
+                "example": "大きい蓮華ちゃんの身長や外見が一変しました。",
+                "audio_path_explain": "audio/4/一変(いっぺん)_explain.mp3",
+                "audio_path_example": "audio/4/一変(いっぺん)_example.mp3"
+            },
+            {
+                "word": "異動(いどう)",
+                "explain": "调动。",
+                "example": "人事異動。",
+                "audio_path_explain": "audio/4/異動(いどう)_explain.mp3",
+                "audio_path_example": "audio/4/異動(いどう)_example.mp3"
+            },
+            {
+                "word": "営む(いとなむ)",
+                "explain": "",
+                "example": "事業を営む。",
+                "audio_path_explain": "audio/4/営む(いとなむ)_explain.mp3",
+                "audio_path_example": "audio/4/営む(いとなむ)_example.mp3"
+            },
+            {
+                "word": "挑む(いどむ)",
+                "explain": "挑战。",
+                "example": "世界記録に挑む。",
+                "audio_path_explain": "audio/4/挑む(いどむ)_explain.mp3",
+                "audio_path_example": "audio/4/挑む(いどむ)_example.mp3"
+            },
+            {
+                "word": "鼾(いびき)",
+                "explain": "鼾声",
+                "example": "蓮華ちゃんは私の側で鼾をかく眠っている。",
+                "audio_path_explain": "audio/4/鼾(いびき)_explain.mp3",
+                "audio_path_example": "audio/4/鼾(いびき)_example.mp3"
+            },
+            {
+                "word": "未だ(いまだ)",
+                "explain": "尚未。",
+                "example": "革命未だ成らず。",
+                "audio_path_explain": "audio/4/未だ(いまだ)_explain.mp3",
+                "audio_path_example": "audio/4/未だ(いまだ)_example.mp3"
+            },
+            {
+                "word": "卑しい(いやしい)",
+                "explain": "下贱。卑污",
+                "example": "卑しい人間。",
+                "audio_path_explain": "audio/4/卑しい(いやしい)_explain.mp3",
+                "audio_path_example": "audio/4/卑しい(いやしい)_example.mp3"
+            },
+            {
+                "word": "いやに",
+                "explain": "异常，反常。",
+                "example": "きょうは蓮華ちゃんがいやにきれいだね。",
+                "audio_path_explain": "audio/4/いやに_explain.mp3",
+                "audio_path_example": "audio/4/いやに_example.mp3"
+            },
+            {
+                "word": "意欲(いよく)",
+                "explain": "热情",
+                "example": "蓮華ちゃんと結婚の意欲はとても高い。",
+                "audio_path_explain": "audio/4/意欲(いよく)_explain.mp3",
+                "audio_path_example": "audio/4/意欲(いよく)_example.mp3"
+            },
+            {
+                "word": "受け入れる(うけいれる)",
+                "explain": "接受，听从他人意见。",
+                "example": "皆の要求を受け入れる。",
+                "audio_path_explain": "audio/4/受け入れる(うけいれる)_explain.mp3",
+                "audio_path_example": "audio/4/受け入れる(うけいれる)_example.mp3"
+            },
+            {
+                "word": "受け付ける(うけつける)",
+                "explain": "受理",
+                "example": "申込みは明日まで受け付ける。",
+                "audio_path_explain": "audio/4/受け付ける(うけつける)_explain.mp3",
+                "audio_path_example": "audio/4/受け付ける(うけつける)_example.mp3"
+            },
+            {
+                "word": "受け止める(うけとめる)",
+                "explain": "接住。挡住。",
+                "example": "ボールを片手で受け止める。",
+                "audio_path_explain": "audio/4/受け止める(うけとめる)_explain.mp3",
+                "audio_path_example": "audio/4/受け止める(うけとめる)_example.mp3"
+            },
+            {
+                "word": "受け持つ(うけもつ)",
+                "explain": "担任，负责。",
+                "example": "1人で2役受け持っている。",
+                "audio_path_explain": "audio/4/受け持つ(うけもつ)_explain.mp3",
+                "audio_path_example": "audio/4/受け持つ(うけもつ)_example.mp3"
+            }
+        ]
     },
     {
         "id": 5,
-        "data": []
+        "data": [
+            {
+                "word": "潔い(いさぎよい)",
+                "explain": "思い切りがよくてりっぱだ（干脆）",
+                "example": "彼は潔く誤りを認めた。",
+                "audio_path_explain": "audio/5/潔い(いさぎよい)_explain.mp3",
+                "audio_path_example": "audio/5/潔い(いさぎよい)_example.mp3"
+            },
+            {
+                "word": "執筆(しっぴつ)",
+                "explain": "文章を書くこと。",
+                "example": "長編小説を執筆中です。",
+                "audio_path_explain": "audio/5/執筆(しっぴつ)_explain.mp3",
+                "audio_path_example": "audio/5/執筆(しっぴつ)_example.mp3"
+            },
+            {
+                "word": "閑静(かんせい)",
+                "explain": "環境などがひっそりとして静かなこと。（清静。幽静。）",
+                "example": "閑静な住まい。",
+                "audio_path_explain": "audio/5/閑静(かんせい)_explain.mp3",
+                "audio_path_example": "audio/5/閑静(かんせい)_example.mp3"
+            },
+            {
+                "word": "ノウハウ",
+                "explain": "know-how ; 技术。",
+                "example": "この技術は、数十年にわたる研究とノーハウの集大成です。",
+                "audio_path_explain": "audio/5/ノウハウ_explain.mp3",
+                "audio_path_example": "audio/5/ノウハウ_example.mp3"
+            },
+            {
+                "word": "かねがね",
+                "explain": "前前から（很久以前，老早）。",
+                "example": "お名前はかねがねお伺いしていました。",
+                "audio_path_explain": "audio/5/かねがね_explain.mp3",
+                "audio_path_example": "audio/5/かねがね_example.mp3"
+            },
+            {
+                "word": "かろうじて",
+                "explain": "ぎりぎりのところで（好不容易才……，勉勉强强地。）",
+                "example": "試験にかろうじて及第した。",
+                "audio_path_explain": "audio/5/かろうじて_explain.mp3",
+                "audio_path_example": "audio/5/かろうじて_example.mp3"
+            },
+            {
+                "word": "割り当てる（わりあてる）",
+                "explain": "配分する。わりふる。（分摊。分配。）",
+                "example": "役を割り当てる。",
+                "audio_path_explain": "audio/5/割り当てる_explain.mp3",
+                "audio_path_example": "audio/5/割り当てる_example.mp3"
+            },
+            {
+                "word": "漁業（ぎょぎょう）",
+                "explain": "魚介類の捕獲・海藻の採取や養殖などをする仕事。",
+                "example": "老夫婦は水辺に住居し漁業を以て世を渡る。",
+                "audio_path_explain": "audio/5/漁業_explain.mp3",
+                "audio_path_example": "audio/5/漁業_example.mp3"
+            },
+            {
+                "word": "類似（るいじ)",
+                "explain": "似通うこと。よく似ていてまぎらわしいこと。",
+                "example": "マリオとルイージの顔は類似したところがある。",
+                "audio_path_explain": "audio/5/類似（るいじ)_explain.mp3",
+                "audio_path_example": "audio/5/類似（るいじ)_example.mp3"
+            },
+            {
+                "word": "設ける（もうける）",
+                "explain": "前もって用意する。",
+                "example": "蓮華ちゃんとの結婚式を設ける。",
+                "audio_path_explain": "audio/5/設ける_explain.mp3",
+                "audio_path_example": "audio/5/設ける_example.mp3"
+            },
+            {
+                "word": "促す（うながす）",
+                "explain": "早く物事をするように急がす。催促する。",
+                "example": "借金の返済を促す。",
+                "audio_path_explain": "audio/5/促す_explain.mp3",
+                "audio_path_example": "audio/5/促す_example.mp3"
+            },
+            {
+                "word": "ぎっしり",
+                "explain": "すきまもなく，いっぱいに入っているさま。",
+                "example": "日程がぎっしり詰まっている。",
+                "audio_path_explain": "audio/5/ぎっしり_explain.mp3",
+                "audio_path_example": "audio/5/ぎっしり_example.mp3"
+            },
+            {
+                "word": "戸惑う（とまどう）",
+                "explain": "対処の仕方がわからず，まごまごする。まごつく。（不知所措。张皇失措。）",
+                "example": "蓮華ちゃんは私の求婚にとまどう。",
+                "audio_path_explain": "audio/5/戸惑う_explain.mp3",
+                "audio_path_example": "audio/5/戸惑う_example.mp3"
+            },
+            {
+                "word": "清々しい（すがすがしい）",
+                "explain": "心地よくさわやかだ。さっぱりしていて気持ちがよい（神清气爽的，清爽的。）",
+                "example": "清々しい朝の大気",
+                "audio_path_explain": "audio/5/清々しい_explain.mp3",
+                "audio_path_example": "audio/5/清々しい_example.mp3"
+            },
+            {
+                "word": "を以て（をもって）",
+                "explain": "手段、方法を表わす。原因、理由を表わす。期限を表します。",
+                "example": "9月をもって、閉店します。",
+                "audio_path_explain": "audio/5/を以て_explain.mp3",
+                "audio_path_example": "audio/5/を以て_example.mp3"
+            },
+            {
+                "word": "飼育（しいく）",
+                "explain": "家畜などを飼って育てること。",
+                "example": "飼育員は毎日動物たちの世話をしています。",
+                "audio_path_explain": "audio/5/飼育_explain.mp3",
+                "audio_path_example": "audio/5/飼育_example.mp3"
+            },
+            {
+                "word": "損なう（そこなう）、損ねる（そこねる）",
+                "explain": "《動詞の連用形に付いて》意図どおりにできない。",
+                "example": "彼は急いで駅に向かったが、電車に乗り損なった。",
+                "audio_path_explain": "audio/5/損なう、損ねる_explain.mp3",
+                "audio_path_example": "audio/5/損なう、損ねる_example.mp3"
+            },
+            {
+                "word": "空しい（むなしい）",
+                "explain": "空っぼだ。内容がない。",
+                "example": "内容の空しい文章。",
+                "audio_path_explain": "audio/5/空しい_explain.mp3",
+                "audio_path_example": "audio/5/空しい_example.mp3"
+            },
+            {
+                "word": "しぶとい",
+                "explain": "強情だ。困難に負けず強い。ねばりづよい。",
+                "example": "一人で妖狐にたちむかう蓮華ちゃんはほんとうにしぶとい女の子だよね。",
+                "audio_path_explain": "audio/5/しぶとい_explain.mp3",
+                "audio_path_example": "audio/5/しぶとい_example.mp3"
+            },
+            {
+                "word": "呆れる（あきれる）",
+                "explain": "物事が意外で驚く。",
+                "example": "私は大きい蓮華ちゃんの巨乳に呆れた",
+                "audio_path_explain": "audio/5/呆れる_explain.mp3",
+                "audio_path_example": "audio/5/呆れる_example.mp3"
+            },
+            {
+                "word": "だけのことはある",
+                "explain": "だけあって、さすが",
+                "example": "さすがDIO！俺たちにできないことを平然とやってのける。",
+                "audio_path_explain": "audio/5/だけのことはある_explain.mp3",
+                "audio_path_example": "audio/5/だけのことはある_example.mp3"
+            },
+            {
+                "word": "ものだ",
+                "explain": "過去の経験や出来事についての感慨や感動を表す。（多与「よく」等副词呼应）",
+                "example": "数年前、よく蓮華ちゃんと万華鏡の世界に访ねたものだ。",
+                "audio_path_explain": "audio/5/ものだ_explain.mp3",
+                "audio_path_example": "audio/5/ものだ_example.mp3"
+            },
+            {
+                "word": "ことか",
+                "explain": "感情や感慨を強調する（多与「どんなに・どれほど・何度・なんと」等副词呼应）",
+                "example": "夕日に映える蓮華ちゃんはなんと清純で美しいことか！",
+                "audio_path_explain": "audio/5/ことか_explain.mp3",
+                "audio_path_example": "audio/5/ことか_example.mp3"
+            }
+        ]
     },
     {
         "id": 6,
-        "data": []
+        "data": [
+            {
+                "word": "仕来り(しきたり)",
+                "explain": "伝統",
+                "example": "この村には古い仕来りがたくさん残っている。",
+                "audio_path_explain": "audio/6/仕来り(しきたり)_explain.mp3",
+                "audio_path_example": "audio/6/仕来り(しきたり)_example.mp3"
+            },
+            {
+                "word": "覆す(くつがえす)",
+                "explain": "打ち破る(うちやぶる)",
+                "example": "JUMPINGさんの議論が数学の大厦を覆した。",
+                "audio_path_explain": "audio/6/覆す(くつがえす)_explain.mp3",
+                "audio_path_example": "audio/6/覆す(くつがえす)_example.mp3"
+            },
+            {
+                "word": "厳か(おごそか)",
+                "explain": "威厳がある",
+                "example": "神社での祭りが厳かな儀式として行われた。",
+                "audio_path_explain": "audio/6/厳か(おごそか)_explain.mp3",
+                "audio_path_example": "audio/6/厳か(おごそか)_example.mp3"
+            },
+            {
+                "word": "回りくどい(まわりくどい)",
+                "explain": "直接的でなく、遠回しでわかりにくい（转弯抹角的，啰啰嗦嗦的。）",
+                "example": "先生の説明が回りくどく、学生たちは理解に苦しんだ。",
+                "audio_path_explain": "audio/6/回りくどい(まわりくどい)_explain.mp3",
+                "audio_path_example": "audio/6/回りくどい(まわりくどい)_example.mp3"
+            },
+            {
+                "word": "試行錯誤(しこうさくご)",
+                "explain": "問題を解決するために様々な方法を試み（こころみ）、失敗しながらも最適な解決策を見つける過程",
+                "example": "プロジェクトの進行には多くの試行錯誤があったが、最終的に素晴らしい結果が得られた。",
+                "audio_path_explain": "audio/6/試行錯誤(しこうさくご)_explain.mp3",
+                "audio_path_example": "audio/6/試行錯誤(しこうさくご)_example.mp3"
+            },
+            {
+                "word": "押し切る(おしきる)",
+                "explain": "困難や反対を乗り越えて、目標を達成すること",
+                "example": "蓮華ちゃんは多くの反対意見を押し切って、私と結婚した。",
+                "audio_path_explain": "audio/6/押し切る(おしきる)_explain.mp3",
+                "audio_path_example": "audio/6/押し切る(おしきる)_example.mp3"
+            },
+            {
+                "word": "煽てる(おだてる)",
+                "explain": "相手を褒めること",
+                "example": "上司をおだてて、昇進を狙う。",
+                "audio_path_explain": "audio/6/煽てる(おだてる)_explain.mp3",
+                "audio_path_example": "audio/6/煽てる(おだてる)_example.mp3"
+            },
+            {
+                "word": "質素(しっそ)",
+                "explain": "簡素であり、派手さや贅沢を避けた生活",
+                "example": "質素な生活を送る。",
+                "audio_path_explain": "audio/6/質素(しっそ)_explain.mp3",
+                "audio_path_example": "audio/6/質素(しっそ)_example.mp3"
+            },
+            {
+                "word": "踏まえる(ふまえる)",
+                "explain": "基にして行動する",
+                "example": "過去の失敗を踏まえた頑張りましょう。",
+                "audio_path_explain": "audio/6/踏まえる(ふまえる)_explain.mp3",
+                "audio_path_example": "audio/6/踏まえる(ふまえる)_example.mp3"
+            },
+            {
+                "word": "辟易(へきえき)",
+                "explain": "勢いや困難におされて，しりごみすること。",
+                "example": "連日の猛暑に辟易している。",
+                "audio_path_explain": "audio/6/辟易(へきえき)_explain.mp3",
+                "audio_path_example": "audio/6/辟易(へきえき)_example.mp3"
+            },
+            {
+                "word": "目覚ましい(めざましい)",
+                "explain": "驚くべきほど顕著（けんちょ）であること",
+                "example": "彼の成績はこの一年で目覚ましい向上を見せた。",
+                "audio_path_explain": "audio/6/目覚ましい(めざましい)_explain.mp3",
+                "audio_path_example": "audio/6/目覚ましい(めざましい)_example.mp3"
+            },
+            {
+                "word": "地道(じみち)",
+                "explain": "着実（ちゃくじつ）で穏やかな態度や行動",
+                "example": "地道な努力が必要です。",
+                "audio_path_explain": "audio/6/地道(じみち)_explain.mp3",
+                "audio_path_example": "audio/6/地道(じみち)_example.mp3"
+            },
+            {
+                "word": "弛み無く(たゆみなく)",
+                "explain": "途切れることなく、絶え間なく",
+                "example": "彼女は目標に向かってたゆみなく進んでいる。",
+                "audio_path_explain": "audio/6/弛み無く(たゆみなく)_explain.mp3",
+                "audio_path_example": "audio/6/弛み無く(たゆみなく)_example.mp3"
+            },
+            {
+                "word": "栄える(さかえる)",
+                "explain": "繁栄する",
+                "example": "古都京都は観光地として栄えている。",
+                "audio_path_explain": "audio/6/栄える(さかえる)_explain.mp3",
+                "audio_path_example": "audio/6/栄える(さかえる)_example.mp3"
+            },
+            {
+                "word": "堪能(たんのう)",
+                "explain": "充分に楽しむ、満足する",
+                "example": "私は蓮華ちゃんの小さい体を堪能します",
+                "audio_path_explain": "audio/6/堪能(たんのう)_explain.mp3",
+                "audio_path_example": "audio/6/堪能(たんのう)_example.mp3"
+            },
+            {
+                "word": "照会(しょうかい)",
+                "explain": "情報や事実を確認する",
+                "example": "銀行のATMで残高を照会する",
+                "audio_path_explain": "audio/6/照会(しょうかい)_explain.mp3",
+                "audio_path_example": "audio/6/照会(しょうかい)_example.mp3"
+            },
+            {
+                "word": "ぎこちない",
+                "explain": "動作や言葉が滑らかでない。",
+                "example": "ぎこちない手つき。",
+                "audio_path_explain": "audio/6/ぎこちない_explain.mp3",
+                "audio_path_example": "audio/6/ぎこちない_example.mp3"
+            },
+            {
+                "word": "商い(あきない)",
+                "explain": "商売",
+                "example": "家族で代々続く商いを営んでいる。",
+                "audio_path_explain": "audio/6/商い(あきない)_explain.mp3",
+                "audio_path_example": "audio/6/商い(あきない)_example.mp3"
+            },
+            {
+                "word": "機転(きてん)",
+                "explain": "即座の判断力",
+                "example": "彼の機転のおかげで、危機を乗り越えることができた。",
+                "audio_path_explain": "audio/6/機転(きてん)_explain.mp3",
+                "audio_path_example": "audio/6/機転(きてん)_example.mp3"
+            },
+            {
+                "word": "先送り(さきおくり)",
+                "explain": "延期、後回し",
+                "example": "難しい問題を先送りする。",
+                "audio_path_explain": "audio/6/先送り(さきおくり)_explain.mp3",
+                "audio_path_example": "audio/6/先送り(さきおくり)_example.mp3"
+            },
+            {
+                "word": "覚束ない(おぼつかない)",
+                "explain": "確信が持てないこと",
+                "example": "今の成績では合格は覚束ない。",
+                "audio_path_explain": "audio/6/覚束ない(おぼつかない)_explain.mp3",
+                "audio_path_example": "audio/6/覚束ない(おぼつかない)_example.mp3"
+            },
+            {
+                "word": "重宝(ちょうほう)",
+                "explain": "便利で役に立つこと、大切にすること",
+                "example": "このアプリは旅行中にとても重宝します。",
+                "audio_path_explain": "audio/6/重宝(ちょうほう)_explain.mp3",
+                "audio_path_example": "audio/6/重宝(ちょうほう)_example.mp3"
+            },
+            {
+                "word": "捗る(はかどる)",
+                "explain": "順調に進む",
+                "example": "プロジェクトが捗って、予定より早く進んでいる。",
+                "audio_path_explain": "audio/6/捗る(はかどる)_explain.mp3",
+                "audio_path_example": "audio/6/捗る(はかどる)_example.mp3"
+            },
+            {
+                "word": "破綻(はたん)",
+                "explain": "計画や体制が崩れること",
+                "example": "その企業は財務状況が悪化し、経営破綻した。",
+                "audio_path_explain": "audio/6/破綻(はたん)_explain.mp3",
+                "audio_path_example": "audio/6/破綻(はたん)_example.mp3"
+            },
+            {
+                "word": "差し掛かる(さしかかる)",
+                "explain": "特定の時間や場所に近づく",
+                "example": "試験に差し掛かっているので忙しい。",
+                "audio_path_explain": "audio/6/差し掛かる(さしかかる)_explain.mp3",
+                "audio_path_example": "audio/6/差し掛かる(さしかかる)_example.mp3"
+            },
+            {
+                "word": "晒す(さらす)",
+                "explain": "人人のだれの目にも触れるようにする。",
+                "example": "身を危険に晒す。",
+                "audio_path_explain": "audio/6/晒す(さらす)_explain.mp3",
+                "audio_path_example": "audio/6/晒す(さらす)_example.mp3"
+            },
+            {
+                "word": "概ね(おおむね)",
+                "explain": "おおよそ",
+                "example": "天気予報によると、明日の天気は概ね晴れだ。",
+                "audio_path_explain": "audio/6/概ね(おおむね)_explain.mp3",
+                "audio_path_example": "audio/6/概ね(おおむね)_example.mp3"
+            }
+        ]
     },
     {
         "id": 7,
-        "data": []
+        "data": [
+            {
+                "word": "熟知(じゅくち)",
+                "explain": "よく知っていること",
+                "example": "彼女は最新の技術に熟知している。",
+                "audio_path_explain": "audio/7/熟知(じゅくち)_explain.mp3",
+                "audio_path_example": "audio/7/熟知(じゅくち)_example.mp3"
+            },
+            {
+                "word": "尊ぶ(とうとぶ)",
+                "explain": "尊敬する、大切にする",
+                "example": "労働法を尊ぶ企業は減少している。",
+                "audio_path_explain": "audio/7/尊ぶ(とうとぶ)_explain.mp3",
+                "audio_path_example": "audio/7/尊ぶ(とうとぶ)_example.mp3"
+            },
+            {
+                "word": "拗れる(こじれる)",
+                "explain": "事柄が，もつれて順調に運ばなくなる。",
+                "example": "会議での議論は拗れてしまい、結論が出せなかった。",
+                "audio_path_explain": "audio/7/拗れる(こじれる)_explain.mp3",
+                "audio_path_example": "audio/7/拗れる(こじれる)_example.mp3"
+            },
+            {
+                "word": "擦る(こする)",
+                "explain": "物を摩擦する",
+                "example": "お風呂で蓮華ちゃんの背中を擦る。",
+                "audio_path_explain": "audio/7/擦る(こする)_explain.mp3",
+                "audio_path_example": "audio/7/擦る(こする)_example.mp3"
+            },
+            {
+                "word": "まごつく",
+                "explain": "混乱する、戸惑う",
+                "example": "突然の質問に彼はまごついて答えられなかった。",
+                "audio_path_explain": "audio/7/まごつく_explain.mp3",
+                "audio_path_example": "audio/7/まごつく_example.mp3"
+            },
+            {
+                "word": "気紛れ(きまぐれ)",
+                "explain": "人や物事の気持ちや行動が突然変わること（１心情浮躁。 2.反复无常。）",
+                "example": "彼女は気紛れで、今日は元気そうだけど、明日は不機嫌かもしれない。",
+                "audio_path_explain": "audio/7/気紛れ(きまぐれ)_explain.mp3",
+                "audio_path_example": "audio/7/気紛れ(きまぐれ)_example.mp3"
+            },
+            {
+                "word": "んばかり",
+                "explain": "今（いま）にも〜しそうだ（几乎，眼看就要）",
+                "example": "蓮華ちゃんに何度も出して、死なんばかりだ。",
+                "audio_path_explain": "audio/7/んばかり_explain.mp3",
+                "audio_path_example": "audio/7/んばかり_example.mp3"
+            },
+            {
+                "word": "には",
+                "explain": "「…する時には」「…の場合には」「…したら」などの意の、軽い仮定条件を表す",
+                "example": "二次元に行くには事故が起こさなければならない。",
+                "audio_path_explain": "audio/7/には_explain.mp3",
+                "audio_path_example": "audio/7/には_example.mp3"
+            },
+            {
+                "word": "妥協(だきょう)",
+                "explain": "譲歩（じょうほ）すること",
+                "example": "交渉の末、両者が妥協して決着をつけた。",
+                "audio_path_explain": "audio/7/妥協(だきょう)_explain.mp3",
+                "audio_path_example": "audio/7/妥協(だきょう)_example.mp3"
+            },
+            {
+                "word": "拒む(こばむ)",
+                "explain": "断る、受け入れない",
+                "example": "蓮華ちゃんは私以外の愛情を拒んだ。",
+                "audio_path_explain": "audio/7/拒む(こばむ)_explain.mp3",
+                "audio_path_example": "audio/7/拒む(こばむ)_example.mp3"
+            },
+            {
+                "word": "障る(さわる)",
+                "explain": "「妨げる」「迷惑をかける」「不快感を与える」",
+                "example": "彼の言動が他人に障ることがある。",
+                "audio_path_explain": "audio/7/障る(さわる)_explain.mp3",
+                "audio_path_example": "audio/7/障る(さわる)_example.mp3"
+            },
+            {
+                "word": "健やか(すこやか)",
+                "explain": "「健康である」「元気である」",
+                "example": "健やかな食生活を送ることが大切です。",
+                "audio_path_explain": "audio/7/健やか(すこやか)_explain.mp3",
+                "audio_path_example": "audio/7/健やか(すこやか)_example.mp3"
+            },
+            {
+                "word": "釣り合う(つりあう)",
+                "explain": "バランスが取れている、均衡している",
+                "example": "収入と支出が釣り合わない。",
+                "audio_path_explain": "audio/7/釣り合う(つりあう)_explain.mp3",
+                "audio_path_example": "audio/7/釣り合う(つりあう)_example.mp3"
+            },
+            {
+                "word": "めきめき",
+                "explain": "目立って成長・進歩・伸展をするさま。（进步发展显著，迅速。）",
+                "example": "日本語がめきめきと上達する。",
+                "audio_path_explain": "audio/7/めきめき_explain.mp3",
+                "audio_path_example": "audio/7/めきめき_example.mp3"
+            },
+            {
+                "word": "危うく(あやうく)",
+                "explain": "《「危うく…ところ（だ）」の形で》すんでの事に。",
+                "example": "危うく命を落すところだった。",
+                "audio_path_explain": "audio/7/危うく(あやうく)_explain.mp3",
+                "audio_path_example": "audio/7/危うく(あやうく)_example.mp3"
+            },
+            {
+                "word": "たて",
+                "explain": "たばかり",
+                "example": "取り立てのお野菜で作るサラダは美味しい。",
+                "audio_path_explain": "audio/7/たて_explain.mp3",
+                "audio_path_example": "audio/7/たて_example.mp3"
+            },
+            {
+                "word": "伐採(ばっさい)",
+                "explain": "木々を切り倒して取り除くこと",
+                "example": "その地域では大規模な伐採が行われている。",
+                "audio_path_explain": "audio/7/伐採(ばっさい)_explain.mp3",
+                "audio_path_example": "audio/7/伐採(ばっさい)_example.mp3"
+            },
+            {
+                "word": "恨む(うらむ)",
+                "explain": "恨む、憎む、怨む。",
+                "example": "彼は自分の過去の選択を恨んでいた。",
+                "audio_path_explain": "audio/7/恨む(うらむ)_explain.mp3",
+                "audio_path_example": "audio/7/恨む(うらむ)_example.mp3"
+            },
+            {
+                "word": "モチベーション",
+                "explain": "motivation",
+                "example": "仕事や学業を頑張るためのモチベーションが必要だ。",
+                "audio_path_explain": "audio/7/モチベーション_explain.mp3",
+                "audio_path_example": "audio/7/モチベーション_example.mp3"
+            },
+            {
+                "word": "冴える(さえる)",
+                "explain": "頭がはっきりする",
+                "example": "先生はストーリー部分だけで冴えた判断力を持っている。",
+                "audio_path_explain": "audio/7/冴える(さえる)_explain.mp3",
+                "audio_path_example": "audio/7/冴える(さえる)_example.mp3"
+            },
+            {
+                "word": "今一つ",
+                "explain": "物事が不十分である、満足できない",
+                "example": "彼の説明は今一つだったので、理解できなかった。",
+                "audio_path_explain": "audio/7/今一つ_explain.mp3",
+                "audio_path_example": "audio/7/今一つ_example.mp3"
+            },
+            {
+                "word": "懲り懲り(こり ごり)",
+                "explain": "失敗や嫌な経験を繰り返して疲れ果てている様子",
+                "example": "私は三次元の女と付き合うことはもう懲り懲りだ。",
+                "audio_path_explain": "audio/7/懲り懲り(こり ごり)_explain.mp3",
+                "audio_path_example": "audio/7/懲り懲り(こり ごり)_example.mp3"
+            },
+            {
+                "word": "と相まって",
+                "explain": "相互に関係して、効果や影響を強める",
+                "example": "彼岸花とあいまって、蓮華ちゃんがより美しくなる。",
+                "audio_path_explain": "audio/7/と相まって_explain.mp3",
+                "audio_path_example": "audio/7/と相まって_example.mp3"
+            }
+        ]
     },
     {
         "id": 8,
@@ -546,6 +1743,128 @@
                 "example": "万華鏡の成功は、蓮華ちゃんによるところが大きい。",
                 "audio_path_explain": "audio/12/によるところが大きい_explain.mp3",
                 "audio_path_example": "audio/12/によるところが大きい_example.mp3"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "data": [
+            {
+                "word": "ゆえに",
+                "explain": "ので（因而，故而）",
+                "example": "われ思うゆえにわれ在り。",
+                "audio_path_explain": "audio/13/ゆえに_explain.mp3",
+                "audio_path_example": "audio/13/ゆえに_example.mp3"
+            },
+            {
+                "word": "とあって",
+                "explain": "なので",
+                "example": "蓮華ちゃんはロリとあって、おっぱいは小さい。",
+                "audio_path_explain": "audio/13/とあって_explain.mp3",
+                "audio_path_example": "audio/13/とあって_example.mp3"
+            },
+            {
+                "word": "相容れない（あいいれない）",
+                "explain": "互いに受け入れられない。",
+                "example": "彼らの意見は相容れない。",
+                "audio_path_explain": "audio/13/相容れない_explain.mp3",
+                "audio_path_example": "audio/13/相容れない_example.mp3"
+            },
+            {
+                "word": "重苦しい（おもくるしい）",
+                "explain": "気持ちが沈んでいる、または圧迫感がある。",
+                "example": "彼の言葉に重苦しい雰囲気が漂った。",
+                "audio_path_explain": "audio/13/重苦しい_explain.mp3",
+                "audio_path_example": "audio/13/重苦しい_example.mp3"
+            },
+            {
+                "word": "賄う（まかなう）",
+                "explain": "必要なものを提供する。(供给)",
+                "example": "風香ちゃんはゲヘナ学園の食事を賄う。",
+                "audio_path_explain": "audio/13/賄う_explain.mp3",
+                "audio_path_example": "audio/13/賄う_example.mp3"
+            },
+            {
+                "word": "紛れる（まぎれる）",
+                "explain": "他のものと混じって分からなくなる。",
+                "example": "桃井と緑は双子だから、エロ漫画に紛れやすい。",
+                "audio_path_explain": "audio/13/紛れる_explain.mp3",
+                "audio_path_example": "audio/13/紛れる_example.mp3"
+            },
+            {
+                "word": "削る（けずる）",
+                "explain": "表面を少し取り除く。",
+                "example": "鉛筆を削る。",
+                "audio_path_explain": "audio/13/削る_explain.mp3",
+                "audio_path_example": "audio/13/削る_example.mp3"
+            },
+            {
+                "word": "輪郭（りんかく）",
+                "explain": "物の外形や境界線。",
+                "example": "遠くの山の輪郭がはっきり見える。",
+                "audio_path_explain": "audio/13/輪郭_explain.mp3",
+                "audio_path_example": "audio/13/輪郭_example.mp3"
+            },
+            {
+                "word": "捉える（とらえる）",
+                "explain": "しっかりと捕まえる。",
+                "example": "美味しい子供を捉える。",
+                "audio_path_explain": "audio/13/捉える_explain.mp3",
+                "audio_path_example": "audio/13/捉える_example.mp3"
+            },
+            {
+                "word": "交える（まじえる）",
+                "explain": "互いに混ぜる、または一緒にする。",
+                "example": "私情を交える。",
+                "audio_path_explain": "audio/13/交える_explain.mp3",
+                "audio_path_example": "audio/13/交える_example.mp3"
+            },
+            {
+                "word": "競う（きそう）",
+                "explain": "互いに勝負する。",
+                "example": "友達と成績を競う。",
+                "audio_path_explain": "audio/13/競う_explain.mp3",
+                "audio_path_example": "audio/13/競う_example.mp3"
+            },
+            {
+                "word": "塞ぐ",
+                "explain": "気が晴れない。",
+                "example": "塞ぐ顔",
+                "audio_path_explain": "audio/13/塞ぐ_explain.mp3",
+                "audio_path_example": "audio/13/塞ぐ_example.mp3"
+            },
+            {
+                "word": "費やす（ついやす）",
+                "explain": "時間やお金を使う。",
+                "example": "大学の授業は全く時間を費やすことだ。",
+                "audio_path_explain": "audio/13/費やす_explain.mp3",
+                "audio_path_example": "audio/13/費やす_example.mp3"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "data": [
+            {
+                "word": "妬む（ねたむ）、嫉む（そねむ）",
+                "explain": "",
+                "example": "",
+                "audio_path_explain": "audio/14/妬む、嫉む_explain.mp3",
+                "audio_path_example": "audio/14/妬む、嫉む_example.mp3"
+            },
+            {
+                "word": "整える（ととのえる）",
+                "explain": "",
+                "example": "服装を整える。",
+                "audio_path_explain": "audio/14/整える_explain.mp3",
+                "audio_path_example": "audio/14/整える_example.mp3"
+            },
+            {
+                "word": "逆らう（さからう）",
+                "explain": "",
+                "example": "忠言耳に逆らう。",
+                "audio_path_explain": "audio/14/逆らう_explain.mp3",
+                "audio_path_example": "audio/14/逆らう_example.mp3"
             }
         ]
     }

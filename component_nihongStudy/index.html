@@ -165,7 +165,9 @@
                 option.classList.add('incorrect');
                 document.getElementById('tachie').src = "tachie/蓮華_中_制服1_128照れ49.png"
             }
+            console.log(currentData.audio_path_example)
             playAudio(currentData.audio_path_example);
+           
             document.getElementById('next-btn').style.display = 'block';
 
             document.getElementById("example").innerHTML = currentData.example
@@ -173,11 +175,18 @@
         }
 
 
+        let currentAudio = null;
         function playAudio(audioPath) {
-            console.log(audioPath)
+            // console.log(audioPath);
             if (audioPath) {
-                const audio = new Audio(audioPath);
-                audio.play().catch(error => {
+                // 如果有正在播放的音频，先停止它
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0; // 重置音频到开始位置
+                }
+
+                currentAudio = new Audio(audioPath);
+                currentAudio.play().catch(error => {
                     console.error('Failed to play audio:', error);
                 });
             }
@@ -238,9 +247,20 @@
     <img id="tachie" src="tachie/蓮華_中_制服1_002通常2.png" alt="描述图片的文字" class="corner-image" onclick="touch()">
     <div id="lesson-selection">
         <div>课程选择:</div>
+        <button onclick="selectLesson(1)">第1课</button>
+        <button onclick="selectLesson(2)">第2课</button>
+        <button onclick="selectLesson(3)">第3课</button>
+        <button onclick="selectLesson(4)">第4课</button>
+        <button onclick="selectLesson(5)">第5课</button>
+        <button onclick="selectLesson(6)">第6课</button>
+        <button onclick="selectLesson(7)">第7课</button>
+ 
         <button onclick="selectLesson(8)">第8课</button>
         <button onclick="selectLesson(9)">第9课</button>
         <button onclick="selectLesson(10)">第10课</button>
+        <button onclick="selectLesson(11)">第11课</button>
+        <button onclick="selectLesson(12)">第12课</button>
+        <button onclick="selectLesson(13)">第13课</button>
     </div>
 </body>
 
