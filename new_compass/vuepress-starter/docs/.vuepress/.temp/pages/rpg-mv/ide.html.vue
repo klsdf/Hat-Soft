@@ -1,5 +1,5 @@
 <template><div><h1 id="视图" tabindex="-1"><a class="header-anchor" href="#视图"><span>视图</span></a></h1>
-<p>为方便初学者的使用，此部分是针对RPG Maker MV主界面功能的介绍。</p>
+<p>此部分是针对RPG Maker MV主界面功能的介绍。</p>
 <h2 id="功能栏" tabindex="-1"><a class="header-anchor" href="#功能栏"><span>功能栏</span></a></h2>
 <p>打开RPG Maker MV软件，我们可以看到以下内容：</p>
 <p><img src="@source/rpg-mv/image/bar.png" alt="image"></p>

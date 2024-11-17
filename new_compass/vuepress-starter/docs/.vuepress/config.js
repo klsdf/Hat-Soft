@@ -18,7 +18,7 @@ export default defineUserConfig({
       },
       {
         text: '总类',
-        link: '/main-menu'
+        link: '/Compass'
       },
       {
         text: 'RPG-MV',

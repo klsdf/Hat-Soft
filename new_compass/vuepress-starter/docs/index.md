@@ -4,7 +4,7 @@ title: 主页
 heroImage: Logo.png
 actions:
   - text: 让我们开始
-    link: /main-menu
+    link: Compass
     type: primary
 
   - text: 官网

@@ -1,5 +1,5 @@
-import comp from "C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/component_notes/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/main-menu.html.vue"
-const data = JSON.parse("{\"path\":\"/main-menu.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"main-menu.md\"}")
+import comp from "C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/main-menu.html.vue"
+const data = JSON.parse("{\"path\":\"/main-menu.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1731844556000,\"contributors\":[{\"name\":\"Rose-Butterfly\",\"email\":\"rose.butterfly.0330@gmail.com\",\"commits\":2,\"url\":\"https://github.com/Rose-Butterfly\"},{\"name\":\"ycx\",\"email\":\"1796655849@qq.com\",\"commits\":1,\"url\":\"https://github.com/ycx\"}]},\"filePathRelative\":\"main-menu.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

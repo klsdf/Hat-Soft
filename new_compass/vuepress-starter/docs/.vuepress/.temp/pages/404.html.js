@@ -1,4 +1,4 @@
-import comp from "C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/component_notes/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/404.html.vue"
+import comp from "C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/404.html.vue"
 const data = JSON.parse("{\"path\":\"/404.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"layout\":\"NotFound\"},\"headers\":[],\"git\":{},\"filePathRelative\":null}")
 export { comp, data }
 
