@@ -25,17 +25,29 @@ export default defineUserConfig({
         prefix: '/rpg-mv/',
         children: [
           {
+            text: '开始',
+            link: 'start'
+          },
+          {
             text: '视图',
-            link: 'ide.md'
+            link: 'ide'
+          },
+          {
+            text: '脚本',
+            link: 'script'
           },
           {
             text: '杂项',
-            link: 'misc.md'
+            link: 'misc'
           },
+          {
+            text: 'API速查',
+            link: 'api'
+          }
         ],
       },
       {
-        text: 'Bilibili',
+        text: 'BiliBili',
         link: 'https://space.bilibili.com/36163336',
       },
     ],

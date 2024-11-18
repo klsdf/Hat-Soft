@@ -12,8 +12,8 @@ actions:
     type: secondary
 
 features:
-  - title: 占位
-    details: 占位内容
+  - title: 你好
+    details: 世界
   - title: 占位
     details: 占位内容
   - title: 占位

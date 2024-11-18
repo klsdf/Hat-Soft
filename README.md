@@ -1,5 +1,3 @@
-![image](icon/Logo.png)
-
 <h2 align="center">
     你好，世界
 </h2>
