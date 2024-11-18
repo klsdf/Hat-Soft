@@ -10,6 +10,7 @@ export const routes = Object.fromEntries([
   ["/rpg-mv/script.html", { loader: () => import(/* webpackChunkName: "rpg-mv_script.html" */"C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/rpg-mv/script.html.js"), meta: {"title":""} }],
   ["/rpg-mv/start.html", { loader: () => import(/* webpackChunkName: "rpg-mv_start.html" */"C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/rpg-mv/start.html.js"), meta: {"title":"你好，世界"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
+  ["/rpg-mv/nw-api.html", { loader: () => import(/* webpackChunkName: "rpg-mv_nw-api.html" */"C:/Users/Butterfly/Desktop/帽子社/Hat-Soft/new_compass/vuepress-starter/docs/.vuepress/.temp/pages/rpg-mv/nw-api.html.js"), meta: {"title":""} }],
 ]);
 
 if (import.meta.webpackHot) {
