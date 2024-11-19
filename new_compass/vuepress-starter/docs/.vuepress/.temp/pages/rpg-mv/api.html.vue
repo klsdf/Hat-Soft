@@ -14,7 +14,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -43,7 +43,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -66,7 +66,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -89,7 +89,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -123,7 +123,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -146,7 +146,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -169,7 +169,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -204,7 +204,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -219,14 +219,14 @@
 </tbody>
 </table>
 <h4 id="用法实例-1" tabindex="-1"><a class="header-anchor" href="#用法实例-1"><span><strong>用法实例</strong></span></a></h4>
-<div class="language-javascript" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setChoices</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"我"</span><span class="token punctuation">,</span> <span class="token string">"是"</span><span class="token punctuation">,</span> <span class="token string">"选"</span><span class="token punctuation">,</span> <span class="token string">"项"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setChoices</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"我"</span><span class="token punctuation">,</span> <span class="token string">"是"</span><span class="token punctuation">,</span> <span class="token string">"选"</span><span class="token punctuation">,</span> <span class="token string">"项"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setChoiceBackground</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setChoicePositionType</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setChoiceCallback</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span><span class="token punctuation">{</span></span>
 <span class="line">  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"你选择的是第"</span><span class="token operator">+</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"项！"</span><span class="token punctuation">)</span></span>
 <span class="line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span></code></pre>
-</div><p><img src="@source/rpg-mv/image/api/choices0.png" alt="image">
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/rpg-mv/image/api/choices0.png" alt="image">
 <img src="@source/rpg-mv/image/api/choices1.png" alt="image"></p>
 <h3 id="数值输入处理" tabindex="-1"><a class="header-anchor" href="#数值输入处理"><span>数值输入处理</span></a></h3>
 <p><em>Input Number</em></p>
@@ -238,7 +238,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -268,7 +268,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -297,13 +297,13 @@
 <p>描述：</p>
 <p>与事件编辑器-显示滚动文字功能相同，滚动打印文字</p>
 <p>需要与$gameMessage.add();一同使用</p>
-<div class="language-javascript" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setScroll</span><span class="token punctuation">(</span>speed<span class="token punctuation">,</span>noFast<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<div class="language-javascript" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setScroll</span><span class="token punctuation">(</span>speed<span class="token punctuation">,</span> noFast<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span></code></pre>
 </div><table>
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>
@@ -324,12 +324,22 @@
 </tbody>
 </table>
 <h4 id="用法实例-2" tabindex="-1"><a class="header-anchor" href="#用法实例-2"><span><strong>用法实例</strong></span></a></h4>
-<div class="language-javascript" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"内容1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"内容1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"内容2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"内容3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line">$gameMessage<span class="token punctuation">.</span><span class="token function">setScroll</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span></code></pre>
-</div><p><img src="@source/rpg-mv/image/api/scrolling.png" alt="image"></p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/rpg-mv/image/api/scrolling.png" alt="image"></p>
+<h2 id="游戏进程" tabindex="-1"><a class="header-anchor" href="#游戏进程"><span>游戏进程</span></a></h2>
+<h3 id="开关操作" tabindex="-1"><a class="header-anchor" href="#开关操作"><span>开关操作</span></a></h3>
+<h3 id="变量操作" tabindex="-1"><a class="header-anchor" href="#变量操作"><span>变量操作</span></a></h3>
+<h3 id="独立开关操作" tabindex="-1"><a class="header-anchor" href="#独立开关操作"><span>独立开关操作</span></a></h3>
+<h3 id="计时器操作" tabindex="-1"><a class="header-anchor" href="#计时器操作"><span>计时器操作</span></a></h3>
+<h2 id="流程控制" tabindex="-1"><a class="header-anchor" href="#流程控制"><span>流程控制</span></a></h2>
+<h3 id="分支条件" tabindex="-1"><a class="header-anchor" href="#分支条件"><span>分支条件</span></a></h3>
+<h3 id="循环" tabindex="-1"><a class="header-anchor" href="#循环"><span>循环</span></a></h3>
+<h3 id="跳出循环" tabindex="-1"><a class="header-anchor" href="#跳出循环"><span>跳出循环</span></a></h3>
+<h3 id="终止事件处理" tabindex="-1"><a class="header-anchor" href="#终止事件处理"><span>终止事件处理</span></a></h3>
 <h4 id="空值" tabindex="-1"><a class="header-anchor" href="#空值"><span>空值</span></a></h4>
 <p>描述：</p>
 <div class="language-javascript" data-highlighter="prismjs" data-ext="js" data-title="JavaScript"><pre v-pre><code><span class="line">hello world</span>
@@ -338,7 +348,7 @@
 <thead>
 <tr>
 <th style="text-align:center">参数</th>
-<th style="text-align:center">参数类型</th>
+<th style="text-align:center"><div style="white-space: nowrap;">参数类型</div></th>
 <th style="text-align:center"><div style="white-space: nowrap;">默认值</div></th>
 <th>说明</th>
 </tr>

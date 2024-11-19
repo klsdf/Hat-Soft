@@ -20,7 +20,7 @@
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setFaceImage(faceName, faceIndex);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |faceName|`String`|none|脸图的文件名|
 |faceIndex|<div style="white-space: nowrap;">`Int`(0-7)</div>|none|脸图从左往右分别是0-3，第二行是4-7|
@@ -34,7 +34,7 @@ $gameMessage.setFaceImage(faceName, faceIndex);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setBackground(background);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |background|<div style="white-space: nowrap;">`Int`(0-2)</div>|0|0：窗口，1：暗淡，2：透明|
 
@@ -47,7 +47,7 @@ $gameMessage.setBackground(background);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setPositionType(positionType);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |positionType|<div style="white-space: nowrap;">`Int`(0-2)</div>|2[(?)](#标识)|0：顶部，1：中间，2：底部|
 
@@ -60,7 +60,7 @@ $gameMessage.setPositionType(positionType);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.add(text);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |text|<div style="white-space: nowrap;">`String`</div>|none|对话框中的内容|
 
@@ -91,7 +91,7 @@ $gameMessage.add("内容");
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setChoiceBackground(0);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |background|<div style="white-space: nowrap;">`Int`(0-2)</div>|0|0：窗口，1：暗淡，2：透明|
 
@@ -104,7 +104,7 @@ $gameMessage.setChoiceBackground(0);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setChoicePositionType(positionType);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |positionType|<div style="white-space: nowrap;">`Int`(0-2)</div>|2[(?)](#标识)|0：顶部，1：中间，2：底部|
 
@@ -117,7 +117,7 @@ $gameMessage.setChoicePositionType(positionType);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setChoices(choices, defaultType, cancelType);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |choices|<div style="white-space: nowrap;">`Array`</div>|none|选项的内容，例如\["是", "否"\]|
 |defaultType|<div style="white-space: nowrap;">`Int`</div>|0|默认指向的选项，由0开始从上到下|
@@ -132,13 +132,13 @@ $gameMessage.setChoices(choices, defaultType, cancelType);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setChoiceCallback(callback);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |callback|<div style="white-space: nowrap;">`Int`</div>|none|选中的选项，由0开始从上到下|
 
 #### **用法实例**
 
-```js:no-line-numbers title="JavaScript"
+```js title="JavaScript"
 $gameMessage.setChoices(["我", "是", "选", "项"], 0, 2);
 $gameMessage.setChoiceBackground(0);
 $gameMessage.setChoicePositionType(1);
@@ -160,7 +160,7 @@ $gameMessage.setChoiceCallback(function(n){
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setNumberInput(variableId ,maxDigits);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |variableId|<div style="white-space: nowrap;">`Int`</div>|none|变量ID|
 |maxDigits|<div style="white-space: nowrap;">`Int > 0`</div>|none|输入的位数，此处无限制|
@@ -176,7 +176,7 @@ $gameMessage.setNumberInput(variableId ,maxDigits);
 ```js:no-line-numbers title="JavaScript"
 $gameMessage.setItemChoice(variableId ,itemType);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |variableId|<div style="white-space: nowrap;">`Int`</div>|none[(?)](#标识)|变量ID|
 |itemType|<div style="white-space: nowrap;">`Int`1-4</div>|1[(?)](#标识)|物品类型，1：普通，2：重要，3：隐藏A，4：隐藏B|
@@ -196,16 +196,16 @@ $gameMessage.setItemChoice(variableId ,itemType);
 需要与$gameMessage.add();一同使用
 
 ```js:no-line-numbers title="JavaScript"
-$gameMessage.setScroll(speed,noFast);
+$gameMessage.setScroll(speed, noFast);
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 |speed|<div style="white-space: nowrap;">`Float > 0`</div>|2|文字滚动的速度|
 |noFast|<div style="white-space: nowrap;">`Boolean`</div>|false|禁止快进文字，true启用，false禁用|
 
 #### **用法实例**
 
-```js:no-line-numbers title="JavaScript"
+```js title="JavaScript"
 $gameMessage.add("内容1");
 $gameMessage.add("内容2");
 $gameMessage.add("内容3");
@@ -213,6 +213,26 @@ $gameMessage.setScroll(2 ,false);
 ```
 
 ![image](image/api/scrolling.png)
+
+## 游戏进程
+
+### 开关操作
+
+### 变量操作
+
+### 独立开关操作
+
+### 计时器操作
+
+## 流程控制
+
+### 分支条件
+
+### 循环
+
+### 跳出循环
+
+### 终止事件处理
 
 
 
@@ -233,7 +253,7 @@ $gameMessage.setScroll(2 ,false);
 ```js:no-line-numbers title="JavaScript"
 hello world
 ```
-|参数|参数类型|<div style="white-space: nowrap;">默认值</div>|说明|
+|参数|<div style="white-space: nowrap;">参数类型</div>|<div style="white-space: nowrap;">默认值</div>|说明|
 | :---: | :---: | :---: | --- |
 ||<div style="white-space: nowrap;">占位</div>|占位|占位|
 

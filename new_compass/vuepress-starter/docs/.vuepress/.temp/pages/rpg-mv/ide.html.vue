@@ -2,7 +2,7 @@
 <p>此部分是针对RPG Maker MV主界面功能的介绍。</p>
 <h2 id="功能栏" tabindex="-1"><a class="header-anchor" href="#功能栏"><span>功能栏</span></a></h2>
 <p>打开RPG Maker MV软件，我们可以看到以下内容：</p>
-<p><img src="@source/rpg-mv/image/bar.png" alt="image"></p>
+<p><img src="@source/rpg-mv/image/ui/bar.png" alt="image"></p>
 <p>如图所示，这部分便是RPG Maker MV的功能栏；
 其共分为上下两行。</p>
 <ul>

@@ -5,7 +5,7 @@
 
 打开RPG Maker MV软件，我们可以看到以下内容：
 
-![image](image/bar.png)
+![image](image/ui/bar.png)
 
 如图所示，这部分便是RPG Maker MV的功能栏；
 其共分为上下两行。
