@@ -1,0 +1,282 @@
+/* 主页样式 - 重新设计的UI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #2d2d2d;
+    --accent-color: #ff6b6b;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --bg-gradient-start: #0a0a0a;
+    --bg-gradient-end: #1a1a2e;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-hover: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+html {
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    color: var(--text-primary);
+    font-family: 'KaiTi', 'Microsoft YaHei', serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 背景装饰 */
+#logo-main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(107, 107, 255, 0.1) 0%, transparent 50%);
+    animation: backgroundShift 20s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+/* 主标题区域 */
+#main-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+}
+
+#main-title:hover {
+    transform: scale(1.02);
+}
+
+#main-title h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: titleGlow 3s ease-in-out infinite;
+    letter-spacing: 0.1em;
+}
+
+@keyframes titleGlow {
+    0%, 100% { 
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    }
+    50% { 
+        filter: drop-shadow(0 0 20px rgba(255, 107, 107, 0.5));
+    }
+}
+
+.sub-main-title {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--text-secondary);
+    margin-top: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    opacity: 0.9;
+}
+
+.sub-title {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.sub-title #visited-num {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* 菜单容器 */
+#main-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    z-index: 100;
+    overflow-y: auto;
+    align-content: start;
+}
+
+#main-banner.active {
+    display: grid;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 菜单项卡片样式 */
+.main-banner-item {
+    list-style: none;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-banner-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-banner-item a {
+    display: block;
+    padding: 2rem 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner-item a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.main-banner-item a:hover {
+    background: var(--card-hover);
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.main-banner-item a:hover::before {
+    left: 100%;
+}
+
+.main-banner-item a:active {
+    transform: translateY(-2px);
+}
+
+/* 游戏元素 - 板子 */
+#player {
+    display: none; /* 隐藏板子元素 */
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--accent-color), #ff8787);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#player:hover {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+}
+
+#player:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #main-banner {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+    
+    .main-banner-item a {
+        padding: 1.5rem 1rem;
+    }
+    
+    #main-title h1 {
+        font-size: 3rem;
+    }
+    
+    #player {
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.8rem;
+    }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff8787;
+}
+
+/* 标题点击后的状态 */
+#main-title.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.9);
+}
+

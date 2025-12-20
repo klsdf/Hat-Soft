@@ -13,105 +13,47 @@
     <script src="./lib/anime.min.js"></script>
     <script src="./main.js"></script>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/home.css">
 
 </head>
-
-
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        background-color: white;
-        color: black;
-        font-family: 'KaiTi', serif;
-    }
-
-    #main-banner {
-        display: block;
-    }
-
-    #main-banner .main-banner-item {
-        flex: 1;
-        color: white;
-        list-style-type: none;
-        position: absolute;
-        z-index: 999;
-        cursor: pointer;
-
-    }
-
-
-
-    #logo-main {
-
-        /* background-image: url("img/帽子社图标.png"); */
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: -1;
-        /* float: left; */
-    }
-
-    #main-title {
-        padding-top: 40vh;
-        padding-bottom: 40vh;
-
-        font-size: 70px;
-
-        text-align: center;
-
-
-    }
-
-    .sub-main-title {
-        margin-top: 15px;
-        font-size: 40px;
-    }
-    
-    .sub-title{
-        margin-top: 15px;
-        font-size: 27px;
-    }
-
-    #player {
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        width: 100px;
-
-        background-color: white;
-        text-align: center;
-        color: black;
-    }
-</style>
 
 <body>
     <div id="logo-main"></div>
 
-    <div id="main-title">帽子社<div class="sub-main-title">严肃，叛逆，开放</div>
-    <div class="sub-title">您是第<span  id="visited-num">？</span>个访问本页面的人</div>
+    <div id="main-title">
+        <h1>帽子社</h1>
+        <div class="sub-main-title">严肃，叛逆，开放</div>
+        <div class="sub-title">您是第<span id="visited-num">？</span>个访问本页面的人</div>
     </div>
 
     <ul id="main-banner">
-        <li class="main-banner-item" component="collider"><a href="./component_notes/index.html">教程资料</a></li>
-        <li class="main-banner-item" component="collider" style="font-size: 30px;"><a
-                href="./component_meetingMinutes/index.html">会议记录</a> </li>
-        <li class="main-banner-item" component="collider"><a href="./component_log_page/index.html">个人页面</a> </li>
-        <!-- <li class="main-banner-item"><a href="./component_gameCenter/index.html">游戏中心</a> </li> -->
-        <li class="main-banner-item" component="collider" style="font-size: 40px;"><a
-                href="./component_joinUs/index.html">加入帽子社群</a> </li>
-        <li class="main-banner-item" component="collider"><a href="./component_talk/index.html">聊天区</a> </li>
-        <li class="main-banner-item" component="collider"><a href="./component_gameAsserts/index.html">游戏素材资源整理</a></li>
-        <li class="main-banner-item" component="collider"><a href="">帽子社游戏合集（准备中）</a></li>
-        <li class="main-banner-item" component="collider"><a href="./component_nihongStudy/index.html">日语小测验捏~~~</a></li>
-
-
-        <!-- <li class="main-banner-item"><a href="./component_Yingxue/index.html">萤雪网页助手</a> </li> -->
-
+        <li class="main-banner-item" component="collider">
+            <a href="./component_notes/index.html">📚 教程资料</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="./component_meetingMinutes/index.html">📝 会议记录</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="./component_log_page/index.html">👤 个人页面</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="./component_joinUs/index.html">🎯 加入帽子社群</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="./component_talk/index.html">💬 聊天区</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="./component_gameAsserts/index.html">🎨 游戏素材资源整理</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="./component_nihongStudy/index.html">🇯🇵 日语小测验</a>
+        </li>
+        <li class="main-banner-item" component="collider">
+            <a href="https://qm.qq.com/q/subecEBNIY" target="_blank">💚 绿色资源管理器客服群</a>
+        </li>
+        <!-- <li class="main-banner-item" component="collider">
+            <a href="">🎮 帽子社游戏合集（准备中）</a>
+        </li> -->
     </ul>
 
     <div class="collider" component="player collider" id="player" onclick="gameHelp()">板子</div>
@@ -120,11 +62,11 @@
 </body>
 
 <script>
+    // 背景渐变动画 - 从浅色到深色
     var animation = anime({
         targets: 'html',
-        color: '#fff',
-        backgroundColor: '#000',
-        duration: 10000,
+        duration: 2000,
+        easing: 'easeInOutQuad',
         autoplay: false,
     });
 
@@ -135,11 +77,17 @@
     }
 
     $("#main-title").click(function () {
-        $(".main-banner-item").show();
+        $(this).addClass("hidden");
+        $("#main-banner").addClass("active");
         animation.play();
-      
-        // $(this).hide()
-        // console.log("ok")
+        
+        // 菜单项依次显示动画
+        $(".main-banner-item").each(function(index) {
+            const $item = $(this);
+            setTimeout(function() {
+                $item.addClass("visible");
+            }, index * 100);
+        });
     })
 
 
@@ -162,18 +110,8 @@
         // }else{
 
         // }
-        $(".main-banner-item").hide();
-
-        $(".main-banner-item").each(function () {
-            let left = 650;
-            let top = 350;
-            while (530 < left && left < 935 && 260 < top && top < 425) {
-                left = Math.random() * 1000 + 200;
-                top = Math.random() * 500 + 100;
-            }
-            $(this).css("left", `${left}px`);
-            $(this).css("top", `${top}px`);
-        })
+        // 菜单项初始状态已通过CSS控制，不需要随机定位
+        // 使用网格布局替代随机定位，更有序美观
     })
 
 
